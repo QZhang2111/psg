@@ -1,0 +1,13 @@
+{
+  "row": "pi0_fast",
+  "name": "π0-FAST",
+  "kind": "a released LIBERO checkpoint, run as released",
+  "environment": "openpi",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi0_fast_libero",
+    "openpi_config": "pi0_fast_libero",
+    "tree_sha256": "d59b9cc921277db95fc2ae74efc4121ff7fdae026bbef9ed4e580fdf5a4a05e2",
+    "licence": "not stated"
+  },
+  "method": "none"
+}

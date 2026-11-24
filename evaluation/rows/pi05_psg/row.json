@@ -1,0 +1,13 @@
+{
+  "row": "pi05_psg",
+  "name": "π0.5 + PSG",
+  "kind": "an inference-time method on the released π0.5-LIBERO checkpoint",
+  "environment": "openpi",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "tree_sha256": "42d571bd87f05f1182810f5a8bfa6d084c0d0dd277aff739bcf8f69868e6fb99",
+    "licence": "not stated"
+  },
+  "method": "psg"
+}

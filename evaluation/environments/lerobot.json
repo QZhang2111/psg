@@ -1,0 +1,22 @@
+{
+  "environment": "lerobot",
+  "used_by": ["smolvla_exec10"],
+  "python": "3.12",
+  "sources": [
+    {"what": "lerobot with the smolvla extra", "address": "github.com/huggingface/lerobot", "revision": "e581c1d5701f846788662079d4ac08835c96def9", "licence": "Apache-2.0"}
+  ],
+  "packages_pinned_by_the_source": {"lerobot": "0.7.1 (pyproject.toml L28)", "transformers": ">=5.22.0,<5.23.0", "torch": ">=2.7,<2.16", "num2words": "0.5.x"},
+  "also_needed_at_load": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct (tokenizer, processor, VLM config), not pinned by the release: the report records the revision it resolved",
+  "build": [
+    "create a Python 3.12 environment (pyproject.toml L32)",
+    "clone lerobot at the revision; pip install -e \".[smolvla]\"",
+    "the libero extra (hf-libero) is not installed: the adapter imports no simulator"
+  ],
+  "check": "python -c \"import lerobot, transformers, torch; from lerobot.policies.smolvla.modeling_smolvla import SmolVLAPolicy; from lerobot.sim.integrations.utils import canonical_observation; from lerobot.envs.utils import prepare_canonical_observation; print(transformers.__version__, torch.__version__)\"",
+  "tried_on_the_test_host_2026_11_12": [
+    "a venv with --system-site-packages over an existing Python 3.12 environment with torch 2.11.0 (cu130), then pip install lerobot[smolvla] @ e581c1d5 into the venv (0.23 GB): lerobot 0.7.1, transformers 5.22.2; the check imports pass (266 s under a loaded host)",
+    "weights: lerobot/smolvla_libero at a24f1f38 (1.04 GB); SmolVLM2-500M-Video-Instruct config, tokenizer and processor at main (0.03 GB)"
+  ],
+  "weights": ["snapshot_download(\"HuggingFaceTB/SmolVLM2-500M-Video-Instruct\", allow_patterns=[\"*.json\", \"*.txt\", \"*.jinja\", \"tokenizer*\", \"model.safetensors\"]): the release does not pin it; the units here resolved main to 7b375e1b73b11138ff12fe22c8f2822d8fe03467"]
+
+}

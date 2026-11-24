@@ -1,0 +1,663 @@
+{
+ "block": "OS-G",
+ "title": "Our scenes, Goal",
+ "benchmark": {
+  "name": "our scenes on libero_goal",
+  "code": {
+   "address": "github.com/Lifelong-Robot-Learning/LIBERO",
+   "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+   "licence": "MIT"
+  },
+  "files": "in the code repository (LIBERO-PRO carries them byte-identical)",
+  "suite": "libero_goal",
+  "perturbation": "only the requested object is moved; the training place is left empty",
+  "instruction_rule": "task.language (from the file name)",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f",
+  "grid": {
+   "frame": "robot base, m; world = base + (-0.66, 0.0)",
+   "ids": "x<i>y<j>: x = 0.15 + 0.1 i, y = -0.55 + 0.1 j"
+  }
+ },
+ "base_suite": "libero_goal",
+ "environment": "sim-libero-pro",
+ "loader": "relocate",
+ "rollout": {
+  "environment_seed": 7,
+  "settle_steps": 10,
+  "stop": "predicate",
+  "max_steps": 300
+ },
+ "seeds": [
+  7
+ ],
+ "start_states": "6-15",
+ "built_by": "generated from the benchmark's own files by a development script, not in this repository; this file is the definition",
+ "tasks": [
+  {
+   "index": 0,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 1,
+   "relocate": null
+  },
+  {
+   "index": 1,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x1y9",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x1y9",
+    "xy": [
+     -0.41000000000000003,
+     0.35
+    ],
+    "xy_base_frame": [
+     0.25,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 2,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y6",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x2y6",
+    "xy": [
+     -0.31000000000000005,
+     0.05
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 3,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y9",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x2y9",
+    "xy": [
+     -0.31000000000000005,
+     0.365
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state",
+    "xy_grid": [
+     -0.31000000000000005,
+     0.35
+    ],
+    "offset_m": [
+     0.0,
+     0.015
+    ],
+    "offset_why": "at the grid point the bowl rests on the stove's burner in 10 of 10 start states; shifted away from the stove (+y in the world, left in the policy's main image) by 1.5 cm: the smallest whole centimetre giving table-only contacts in 10 of 10 is 1 cm; 1.5 cm keeps the grid's 14 px frame margin in the main image (2 cm gives 13 px); the place keeps its name"
+   }
+  },
+  {
+   "index": 4,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x5y8",
+    "xy": [
+     -0.010000000000000009,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 5,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y7",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x6y7",
+    "xy": [
+     0.08999999999999997,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 6,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "akita_black_bowl_1",
+    "place": "x6y8",
+    "xy": [
+     0.08999999999999997,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 7,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 6,
+   "relocate": null
+  },
+  {
+   "index": 8,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x1y9",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x1y9",
+    "xy": [
+     -0.41000000000000003,
+     0.35
+    ],
+    "xy_base_frame": [
+     0.25,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 9,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y6",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x2y6",
+    "xy": [
+     -0.31000000000000005,
+     0.05
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 10,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y9",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x2y9",
+    "xy": [
+     -0.31000000000000005,
+     0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 11,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x5y8",
+    "xy": [
+     -0.010000000000000009,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 12,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y7",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x6y7",
+    "xy": [
+     0.08999999999999997,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 13,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x6y8",
+    "xy": [
+     0.08999999999999997,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 14,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 2,
+   "relocate": null
+  },
+  {
+   "index": 15,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x1y9",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x1y9",
+    "xy": [
+     -0.41000000000000003,
+     0.35
+    ],
+    "xy_base_frame": [
+     0.25,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 16,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y6",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x2y6",
+    "xy": [
+     -0.31000000000000005,
+     0.05
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 17,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y9",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x2y9",
+    "xy": [
+     -0.31000000000000005,
+     0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 18,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x5y8",
+    "xy": [
+     -0.010000000000000009,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 19,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y7",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x6y7",
+    "xy": [
+     0.08999999999999997,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  },
+  {
+   "index": 20,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "wine_bottle_1",
+    "place": "x6y8",
+    "xy": [
+     0.08999999999999997,
+     0.25
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.25
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   }
+  }
+ ],
+ "open": "LIBERO draws the fixtures (cabinet, stove, rack) anew at every reset; under the shared rule (env.seed(7) before every episode's reset) every scene and episode gets the same draw. Every start state of every scene was run (results/OS-G/).",
+ "screen": "screened in the simulator by a development script, not in this repository; pass criteria on_table, upright, free, placed, in_frame, unoccluded, others_still; the pixel share against the training place ('visible', 70 %) is a column of the scene table, not a criterion: the places stay as chosen by eye; far places are smaller in the image, not hidden"
+}

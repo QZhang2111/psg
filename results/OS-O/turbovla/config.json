@@ -1,0 +1,3325 @@
+{
+ "schema": "pi05lab-2",
+ "unit": {
+  "block": "OS-O",
+  "row": "turbovla"
+ },
+ "code": {
+  "revision": "4c08b5aeb3daaf5a1b1036efe59d11ce68f6bfea",
+  "clean": true
+ },
+ "benchmark": {
+  "name": "our scenes on libero_object",
+  "code": {
+   "address": "github.com/Lifelong-Robot-Learning/LIBERO",
+   "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+   "licence": "MIT"
+  },
+  "files": "in the code repository (LIBERO-PRO carries them byte-identical)",
+  "suite": "libero_object",
+  "perturbation": "only the requested object is moved; the training place is left empty",
+  "instruction_rule": "task.language (from the file name)",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f",
+  "grid": {
+   "frame": "robot base, m; world = base + (-0.6, 0.0)",
+   "ids": "x<i>y<j>: x = 0.15 + 0.1 i, y = -0.65 + 0.1 j"
+  },
+  "simulator": {
+   "packages": {
+    "libero": "0.1.0",
+    "robosuite": "1.4.1",
+    "mujoco": "3.2.3",
+    "numpy": "1.22.4",
+    "torch": "1.11.0+cu113",
+    "bddl": "1.0.1"
+   },
+   "renderer": "egl",
+   "environment": "sim-libero-pro"
+  }
+ },
+ "tasks": [
+  {
+   "index": 0,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 0,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 1,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 2,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 3,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 4,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 5,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 6,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "alphabet_soup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 0,
+   "relocate": {
+    "body": "alphabet_soup_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 7,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 1,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 8,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 9,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 10,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 11,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 12,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 13,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 1,
+   "relocate": {
+    "body": "cream_cheese_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 14,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 2,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 15,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 16,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 17,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    13,
+    15
+   ],
+   "start_states_left_out": {
+    "states": [
+     9,
+     10,
+     11,
+     12,
+     14
+    ],
+    "why": "the grid's screen: the food did not end at its place (placed or free failed); not run on 2026-11-10"
+   },
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 18,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 19,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 20,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "salad_dressing_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 2,
+   "relocate": {
+    "body": "salad_dressing_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 21,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 3,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 22,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 23,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 24,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 25,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 26,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 27,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "bbq_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 3,
+   "relocate": {
+    "body": "bbq_sauce_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 28,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 4,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 29,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 30,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 31,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "start_states_left_out": {
+    "states": [
+     9,
+     12
+    ],
+    "why": "the grid's screen: the food did not end at its place (placed or free failed); not run on 2026-11-10"
+   },
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 32,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 33,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 34,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "ketchup_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 4,
+   "relocate": {
+    "body": "ketchup_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 35,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 5,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 36,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 37,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 38,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "start_states_left_out": {
+    "states": [
+     6,
+     8
+    ],
+    "why": "the grid's screen: the food did not end at its place (placed or free failed); not run on 2026-11-10"
+   },
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 39,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 40,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 41,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "tomato_sauce_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 5,
+   "relocate": {
+    "body": "tomato_sauce_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 42,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 6,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 43,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 44,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 45,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 46,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 47,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 48,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "butter_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 6,
+   "relocate": {
+    "body": "butter_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 49,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 7,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 50,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 51,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 52,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "start_states_left_out": {
+    "states": [
+     9,
+     12
+    ],
+    "why": "the grid's screen: the food did not end at its place (placed or free failed); not run on 2026-11-10"
+   },
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 53,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 54,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 55,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "milk_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 7,
+   "relocate": {
+    "body": "milk_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 56,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 8,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 57,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 58,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 59,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 60,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 61,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 62,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "chocolate_pudding_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 8,
+   "relocate": {
+    "body": "chocolate_pudding_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 63,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "training",
+   "base_task_index": 9,
+   "relocate": null,
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 64,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y8",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x6y8",
+    "xy": [
+     0.15000000000000002,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.75,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 65,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x6y6",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x6y6",
+    "xy": [
+     0.15000000000000002,
+     -0.05
+    ],
+    "xy_base_frame": [
+     0.75,
+     -0.05
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 66,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x5y8",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x5y8",
+    "xy": [
+     0.050000000000000044,
+     0.15
+    ],
+    "xy_base_frame": [
+     0.65,
+     0.15
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 67,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x4y3",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x4y3",
+    "xy": [
+     -0.04999999999999993,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.55,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 68,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x3y3",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x3y3",
+    "xy": [
+     -0.14999999999999997,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.45,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  },
+  {
+   "index": 69,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "orange_juice_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "place": "x2y3",
+   "base_task_index": 9,
+   "relocate": {
+    "body": "orange_juice_1",
+    "place": "x2y3",
+    "xy": [
+     -0.25,
+     -0.35
+    ],
+    "xy_base_frame": [
+     0.35,
+     -0.35
+    ],
+    "keep": "z and orientation of the start state; every other number of the state"
+   },
+   "start_states": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "base_suite": "libero_object",
+   "max_steps": 280
+  }
+ ],
+ "seeds": {
+  "noise": [
+   7
+  ],
+  "environment": 7,
+  "what_the_environment_seed_changes": "The seed sets NumPy's global generator in the simulator process; it is set anew before every episode's reset. The start state then overwrites the joint positions and velocities of the scene. What the seed still decides is what the reset draws that is not part of that state: the benchmark places its fixtures (cabinet, stove, rack) at every reset within the ranges of the task's file, 1-2 cm. A fresh environment's first seeded reset always gives the same placement; a later reset of the same environment gives it in most tasks but not in all. So every reset's placement is compared with the scene's first, and the environment is built anew when it differs: every episode of a task starts from the same placement, whatever was run before it."
+ },
+ "rollout": {
+  "settle_steps": 10,
+  "settle_action": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "max_steps": 280,
+  "stop": "the episode ends at the first step at which the predicate holds, or at the step limit",
+  "reset": "environment seed, reset, start state, before every episode; the reset's placement of the fixtures is checked against the scene's first and the environment built anew when it differs",
+  "retry": "none: an episode that raises is written with stopped = error and run again by the next launch"
+ },
+ "observation": {
+  "camera_height": 256,
+  "camera_width": 256,
+  "controller": {
+   "action_scale": [
+    0.05,
+    0.05,
+    0.05,
+    0.5,
+    0.5,
+    0.5
+   ]
+  },
+  "cameras": {
+   "main": "agentview",
+   "wrist": "robot0_eye_in_hand"
+  },
+  "image": "uint8, as the simulator returns it, not flipped",
+  "state": [
+   "eef_pos",
+   "eef_quat",
+   "gripper_qpos",
+   "joint_pos"
+  ],
+  "camera_parameters": "intrinsics and extrinsics of both cameras at every query"
+ },
+ "endpoints": {
+  "success": "the BDDL goal of the task's file, checked after every policy step",
+  "labeller": {
+   "revision": "reach-2",
+   "parameters": {
+    "close": "the first policy step whose executed gripper command is > 0 after a command <= 0 (the gripper starts open)",
+    "close_is_on": "the object or fixture owning the geom whose centre is nearest the gripper site at the frame after that step; every geom of every body of the entity counts",
+    "close_max_distance_m": null,
+    "contact": "the first policy step with a gripper geom in contact with a geom of an object or fixture",
+    "contact_max_distance_m": 0.0,
+    "contact_ignores": [
+     "table",
+     "floor"
+    ],
+    "part": "where the target names a part: the first contact with a body of the target's entity named like the target's body with another word in the part's place; the entity's other bodies (its frame) are skipped",
+    "reach_first_contact": "the first entity touched is the target's entity and, where a part is named, the first part touched is the named one",
+    "entity_bodies": "the bodies whose name is the entity's name or starts with it and an underscore; a body matching several entities belongs to the longest name"
+   }
+  }
+ },
+ "model": {
+  "name": "TurboVLA",
+  "checkpoint": {
+   "address": "huggingface.co/H-EmbodVis/TurboVLA",
+   "revision": "9cdb576ed9c56039b9c1149142ed654e876bad76",
+   "sha256": {
+    "checkpoints/libero/turbovla_libero.pth": "d031ad7be05a2f5d04afb3194ed26b0cb46083685edee7a5e145078a37d26bab",
+    "libero_all4_stats.json": "b6a26530cceee6748481995067bfa5570a48a4d22990730dc187fbfa1cc24827"
+   },
+   "licence": "other (DINOv3 licence), as the card states"
+  },
+  "code": {
+   "address": "github.com/H-EmbodVis/TurboVLA",
+   "revision": "650a288f829f549bea18e2173d3f51e77d3fbb74"
+  }
+ },
+ "inference": {
+  "decoding": "one forward pass, ACT queries, tanh; no sampling",
+  "chunk": 12,
+  "executed_per_query": 12,
+  "images": {
+   "cameras": [
+    "main",
+    "wrist"
+   ],
+   "size": 256,
+   "steps": [
+    "rotate 180 degrees",
+    "/255, DINOv3 mean and std from its preprocessor_config"
+   ]
+  },
+  "state": "read: eef position, axis-angle, gripper joints (8); (s - mean) / (std + 1e-6) with libero_all4_no_noops",
+  "prompt": "the instruction, BERT tokenizer (bert-base-uncased), padded to the layout's length",
+  "model_config": {
+   "name": "TurboVLA",
+   "compatibility_profile": "libero",
+   "text": {
+    "model_name_or_path": "/mnt/data/pi05lab-build-20261112/weights/hf/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+    "max_length": 256,
+    "padding_length": 21,
+    "padding_length_by_instruction": {
+     "put the white mug on the left plate and put the yellow and white mug on the right plate": 21,
+     "put the white mug on the plate and put the chocolate pudding to the right of the plate": 21,
+     "put the yellow and white mug in the microwave and close it": 21,
+     "turn on the stove and put the moka pot on it": 21,
+     "put both the alphabet soup and the cream cheese box in the basket": 21,
+     "put both the alphabet soup and the tomato sauce in the basket": 21,
+     "put both moka pots on the stove": 21,
+     "put both the cream cheese box and the butter in the basket": 21,
+     "put the black bowl in the bottom drawer of the cabinet and close it": 21,
+     "pick up the book and place it in the back compartment of the caddy": 21,
+     "put the bowl on the plate": 11,
+     "put the wine bottle on the rack": 11,
+     "open the top drawer and put the bowl inside": 11,
+     "put the cream cheese in the bowl": 11,
+     "put the wine bottle on top of the cabinet": 11,
+     "push the plate to the front of the stove": 11,
+     "turn on the stove": 11,
+     "put the bowl on the stove": 11,
+     "put the bowl on top of the cabinet": 11,
+     "open the middle drawer of the cabinet": 11,
+     "pick up the orange juice and place it in the basket": 14,
+     "pick up the ketchup and place it in the basket": 14,
+     "pick up the cream cheese and place it in the basket": 14,
+     "pick up the bbq sauce and place it in the basket": 14,
+     "pick up the alphabet soup and place it in the basket": 14,
+     "pick up the milk and place it in the basket": 14,
+     "pick up the salad dressing and place it in the basket": 14,
+     "pick up the butter and place it in the basket": 14,
+     "pick up the tomato sauce and place it in the basket": 14,
+     "pick up the chocolate pudding and place it in the basket": 14,
+     "pick up the black bowl next to the cookie box and place it on the plate": 21,
+     "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate": 21,
+     "pick up the black bowl on the ramekin and place it on the plate": 21,
+     "pick up the black bowl on the stove and place it on the plate": 21,
+     "pick up the black bowl between the plate and the ramekin and place it on the plate": 21,
+     "pick up the black bowl on the cookie box and place it on the plate": 21,
+     "pick up the black bowl next to the plate and place it on the plate": 21,
+     "pick up the black bowl next to the ramekin and place it on the plate": 21,
+     "pick up the black bowl from table center and place it on the plate": 21,
+     "pick up the black bowl on the wooden cabinet and place it on the plate": 21
+    },
+    "sub_sentence_present": true,
+    "frozen": true,
+    "force_eval_when_frozen": true,
+    "zero_padded_tokens": false,
+    "local_files_only": true,
+    "attention_implementation": null
+   },
+   "vision": {
+    "model_name_or_path": "/mnt/data/pi05lab-build-20261112/weights/hf/hub/models--facebook--dinov3-vitb16-pretrain-lvd1689m/snapshots/5931719e67bbdb9737e363e781fb0c67687896bc",
+    "image_size": 256,
+    "num_views": 2,
+    "position_embedding": "view",
+    "encode_views_separately": true,
+    "frozen": false,
+    "local_files_only": true,
+    "attention_implementation": null,
+    "compute_precision": "bf16",
+    "position_init_std": 0.01,
+    "position_scale_init": 0.01,
+    "dropout": 0.1
+   },
+   "interaction": {
+    "hidden_dim": 256,
+    "nheads": 8,
+    "num_layers": 6,
+    "dim_feedforward": 2048,
+    "enhancer_inner_dim": 1024,
+    "text_dropout": 0.0,
+    "fusion_dropout": 0.0,
+    "fusion_droppath": 0.1,
+    "padding_strategy": "key_padding_mask",
+    "residual_style": "normalized",
+    "attention_backend": "manual",
+    "compute_precision": "fp32"
+   },
+   "action": {
+    "action_dim": 7,
+    "state_dim": 8,
+    "horizon": 12,
+    "num_state_tokens": 2,
+    "num_layers": 3,
+    "mlp_hidden_dim": 512,
+    "state_hidden_dim": 256,
+    "dropout": 0.1
+   }
+  },
+  "unnormalisation": "dims 0-5 min-max from libero_all4_no_noops; gripper sign",
+  "precision": "bf16",
+  "encoders": {
+   "dinov3": {
+    "hub_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "revision": "5931719e67bbdb9737e363e781fb0c67687896bc"
+   },
+   "bert": {
+    "hub_id": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+   }
+  }
+ },
+ "method": {
+  "name": "none"
+ },
+ "noise_seed_controls": "nothing in the policy (deterministic); the seed seeds random, numpy and torch at the start of the episode, as the release does per task",
+ "model_environment": {
+  "name": "turbovla",
+  "python": "3.9.23",
+  "packages": {
+   "torch": "2.3.1+cu121",
+   "torchvision": "0.18.1+cu121",
+   "transformers": "4.56.0",
+   "tokenizers": "0.22.2",
+   "timm": "1.0.25",
+   "numpy": "1.26.4",
+   "Pillow": "11.3.0",
+   "turbovla": "0.1.0"
+  }
+ },
+ "selection": {
+  "tasks": "all",
+  "states": "all",
+  "shards": 1
+ }
+}

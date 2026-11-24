@@ -1,0 +1,23 @@
+{
+  "environment": "turbovla",
+  "used_by": ["turbovla"],
+  "python": "3.9.25",
+  "sources": [
+    {"what": "TurboVLA, the release's code (turbovla/*)", "address": "github.com/H-EmbodVis/TurboVLA", "revision": "650a288f829f549bea18e2173d3f51e77d3fbb74", "licence": "Apache-2.0"}
+  ],
+  "packages_of_the_release": {"torch": "2.3.1+cu121", "torchvision": "0.18.1", "transformers": "4.56.0", "tokenizers": "0.22.2", "timm": "1.0.25", "numpy": "1.26.4", "Pillow": "11.3.0"},
+  "source_of_the_versions": "experiments/libero/README.md L20-29; pyproject.toml L24-54",
+  "also_needed_at_load": "facebook/dinov3-vitb16-pretrain-lvd1689m (gated: a hub token with access) and google-bert/bert-base-uncased at the revisions in row.json",
+  "build": [
+    "create a Python 3.9 environment",
+    "install torch 2.3.1 and torchvision 0.18.1 for the machine's CUDA",
+    "clone the code at the revision; pip install -e . (without the [libero] extra: the adapter imports no simulator; turbovla.evaluation needs no tensorflow)"
+  ],
+  "check": "python -c \"import torch, transformers, timm; from turbovla.evaluation.suite_policy import TurboVLAPolicy; print(torch.__version__, transformers.__version__)\"",
+  "tried_on_the_test_host_2026_11_12": [
+    "Python 3.9.23 from conda-forge with a standalone micromamba 2.0.5 (3.9.25 was asked; 3.9.23 resolved); torch 2.3.1 and torchvision 0.18.1 from the cu121 index; transformers 4.56.0, tokenizers 0.22.2, timm 1.0.25, numpy 1.26.4, Pillow 11.3.0, huggingface-hub 0.36.2, safetensors 0.7.0; turbovla @ 650a288f with --no-deps (5.2 GB in all); the check imports pass",
+    "weights: turbovla_libero.pth and libero_all4_stats.json at 9cdb576e (0.81 GB), bert-base-uncased at 86b5e093 (0.41 GB); DINOv3 is gated: it downloads only with a hub token that has access to facebook/dinov3-vitb16-pretrain-lvd1689m (also_needed_at_load)"
+  ],
+  "weights": ["snapshot_download(\"H-EmbodVis/TurboVLA\", revision=<the row's>, allow_patterns=[\"checkpoints/libero/turbovla_libero.pth\", \"libero_all4_stats.json\"]): 0.805 GB", "snapshot_download(\"google-bert/bert-base-uncased\", revision=<the row's>, allow_patterns=[\"*.json\", \"*.txt\", \"model.safetensors\"]): 0.411 GB"]
+
+}

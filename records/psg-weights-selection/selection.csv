@@ -1,0 +1,201 @@
+tasks,condition,noise_seeds,setting,a,b,terms_applied,episodes,success,episodes_with_a_reach_target,reach,success_gained,success_lost,reach_gained,reach_lost
+Object,Original,7,released policy,0,0,-,30,30,30,30,,,,
+Object,Original,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,30,30,30,0,0,0,0
+Object,Original,7,"a = 2, b = 1",2,1,whole episode,30,29,30,30,0,1,0,0
+Object,Original,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,30,30,30,0,0,0,0
+Object,Original,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,29,30,30,0,1,0,0
+Goal,Original,7,released policy,0,0,-,30,29,20,20,,,,
+Goal,Original,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,30,20,20,1,0,0,0
+Goal,Original,7,"a = 2, b = 1",2,1,whole episode,30,28,20,20,1,2,0,0
+Goal,Original,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,30,20,20,1,0,0,0
+Goal,Original,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,30,20,20,1,0,0,0
+Spatial,Original,7,released policy,0,0,-,30,29,30,30,,,,
+Spatial,Original,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,28,30,29,1,2,0,1
+Spatial,Original,7,"a = 2, b = 1",2,1,whole episode,30,30,30,30,1,0,0,0
+Spatial,Original,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,30,30,30,1,0,0,0
+Spatial,Original,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,29,30,30,1,1,0,0
+Long,Original,7,released policy,0,0,-,20,19,20,20,,,,
+Long,Original,7,"a = 5, b = 1 (the method)",5,1,whole episode,20,20,20,20,1,0,0,0
+Long,Original,7,"a = 2, b = 1",2,1,whole episode,20,18,20,20,0,1,0,0
+Long,Original,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,19,20,20,0,0,0,0
+Long,Original,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,17,20,20,0,2,0,0
+all 11 tasks,Original,7,released policy,0,0,-,110,107,100,100,,,,
+all 11 tasks,Original,7,"a = 5, b = 1 (the method)",5,1,whole episode,110,108,100,99,3,2,0,1
+all 11 tasks,Original,7,"a = 2, b = 1",2,1,whole episode,110,105,100,100,2,4,0,0
+all 11 tasks,Original,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,109,100,100,2,0,0,0
+all 11 tasks,Original,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,105,100,100,2,4,0,0
+Object,Position,7,released policy,0,0,-,30,5,30,8,,,,
+Object,Position,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,21,30,22,17,1,15,1
+Object,Position,7,"a = 2, b = 1",2,1,whole episode,30,21,30,21,16,0,13,0
+Object,Position,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,21,30,23,16,0,15,0
+Object,Position,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,21,30,22,18,2,15,1
+Goal,Position,7,released policy,0,0,-,30,0,20,10,,,,
+Goal,Position,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,7,20,18,7,0,8,0
+Goal,Position,7,"a = 2, b = 1",2,1,whole episode,30,6,20,10,6,0,0,0
+Goal,Position,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,2,20,18,2,0,8,0
+Goal,Position,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,2,20,18,2,0,8,0
+Spatial,Position,7,released policy,0,0,-,30,6,30,20,,,,
+Spatial,Position,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,11,30,19,9,4,0,1
+Spatial,Position,7,"a = 2, b = 1",2,1,whole episode,30,9,30,17,6,3,0,3
+Spatial,Position,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,9,30,19,7,4,0,1
+Spatial,Position,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,12,30,19,8,2,0,1
+Long,Position,7,released policy,0,0,-,20,0,20,10,,,,
+Long,Position,7,"a = 5, b = 1 (the method)",5,1,whole episode,20,3,20,10,3,0,0,0
+Long,Position,7,"a = 2, b = 1",2,1,whole episode,20,1,20,10,1,0,0,0
+Long,Position,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,0,20,10,0,0,0,0
+Long,Position,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,4,20,10,4,0,0,0
+all 11 tasks,Position,7,released policy,0,0,-,110,11,100,48,,,,
+all 11 tasks,Position,7,"a = 5, b = 1 (the method)",5,1,whole episode,110,42,100,69,36,5,23,2
+all 11 tasks,Position,7,"a = 2, b = 1",2,1,whole episode,110,37,100,58,29,3,13,3
+all 11 tasks,Position,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,32,100,70,25,4,23,1
+all 11 tasks,Position,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,39,100,69,32,4,23,2
+Object,Task,7,released policy,0,0,-,30,2,30,2,,,,
+Object,Task,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,7,30,15,5,0,13,0
+Object,Task,7,"a = 2, b = 1",2,1,whole episode,30,6,30,8,4,0,6,0
+Object,Task,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,7,30,16,6,1,14,0
+Object,Task,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,8,30,16,7,1,14,0
+Goal,Task,7,released policy,0,0,-,30,4,20,20,,,,
+Goal,Task,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,4,20,20,1,1,0,0
+Goal,Task,7,"a = 2, b = 1",2,1,whole episode,30,5,20,20,2,1,0,0
+Goal,Task,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,3,20,20,0,1,0,0
+Goal,Task,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,4,20,20,0,0,0,0
+Spatial,Task,7,released policy,0,0,-,30,12,30,12,,,,
+Spatial,Task,7,"a = 5, b = 1 (the method)",5,1,whole episode,30,17,30,17,5,0,5,0
+Spatial,Task,7,"a = 2, b = 1",2,1,whole episode,30,13,30,13,1,0,1,0
+Spatial,Task,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,15,30,16,3,0,4,0
+Spatial,Task,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,15,30,16,4,1,5,1
+Long,Task,7,released policy,0,0,-,20,8,20,18,,,,
+Long,Task,7,"a = 5, b = 1 (the method)",5,1,whole episode,20,8,20,19,2,2,2,1
+Long,Task,7,"a = 2, b = 1",2,1,whole episode,20,9,20,19,1,0,1,0
+Long,Task,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,8,20,17,1,1,0,1
+Long,Task,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,6,20,17,0,2,0,1
+all 11 tasks,Task,7,released policy,0,0,-,110,26,100,52,,,,
+all 11 tasks,Task,7,"a = 5, b = 1 (the method)",5,1,whole episode,110,36,100,71,13,3,20,1
+all 11 tasks,Task,7,"a = 2, b = 1",2,1,whole episode,110,33,100,60,8,1,8,0
+all 11 tasks,Task,7,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,33,100,69,10,3,18,1
+all 11 tasks,Task,7,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,33,100,69,11,4,19,2
+Object,Original,17,released policy,0,0,-,30,29,30,30,,,,
+Object,Original,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,29,30,30,1,1,0,0
+Object,Original,17,"a = 2, b = 1",2,1,whole episode,30,30,30,30,1,0,0,0
+Object,Original,17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,29,30,30,1,1,0,0
+Goal,Original,17,released policy,0,0,-,30,27,20,20,,,,
+Goal,Original,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,28,20,20,1,0,0,0
+Goal,Original,17,"a = 2, b = 1",2,1,whole episode,30,27,20,20,1,1,0,0
+Goal,Original,17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,28,20,20,2,1,0,0
+Spatial,Original,17,released policy,0,0,-,30,29,30,30,,,,
+Spatial,Original,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,29,30,30,1,1,0,0
+Spatial,Original,17,"a = 2, b = 1",2,1,whole episode,30,30,30,30,1,0,0,0
+Spatial,Original,17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,30,30,30,1,0,0,0
+Long,Original,17,released policy,0,0,-,20,20,20,20,,,,
+Long,Original,17,"a = 5, b = 1 (the method)",5,1,whole episode,20,19,20,20,0,1,0,0
+Long,Original,17,"a = 2, b = 1",2,1,whole episode,20,19,20,20,0,1,0,0
+Long,Original,17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,18,20,20,0,2,0,0
+all 11 tasks,Original,17,released policy,0,0,-,110,105,100,100,,,,
+all 11 tasks,Original,17,"a = 5, b = 1 (the method)",5,1,whole episode,110,105,100,100,3,3,0,0
+all 11 tasks,Original,17,"a = 2, b = 1",2,1,whole episode,110,106,100,100,3,2,0,0
+all 11 tasks,Original,17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,105,100,100,4,4,0,0
+Object,Position,17,released policy,0,0,-,30,8,30,10,,,,
+Object,Position,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,22,30,25,15,1,15,0
+Object,Position,17,"a = 2, b = 1",2,1,whole episode,30,25,30,26,17,0,16,0
+Goal,Position,17,released policy,0,0,-,30,0,20,10,,,,
+Goal,Position,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,11,20,19,11,0,9,0
+Goal,Position,17,"a = 2, b = 1",2,1,whole episode,30,5,20,10,5,0,0,0
+Spatial,Position,17,released policy,0,0,-,30,8,30,17,,,,
+Spatial,Position,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,7,30,16,4,5,0,1
+Spatial,Position,17,"a = 2, b = 1",2,1,whole episode,30,9,30,15,6,5,0,2
+Long,Position,17,released policy,0,0,-,20,0,20,10,,,,
+Long,Position,17,"a = 5, b = 1 (the method)",5,1,whole episode,20,0,20,10,0,0,0,0
+Long,Position,17,"a = 2, b = 1",2,1,whole episode,20,0,20,10,0,0,0,0
+all 11 tasks,Position,17,released policy,0,0,-,110,16,100,47,,,,
+all 11 tasks,Position,17,"a = 5, b = 1 (the method)",5,1,whole episode,110,40,100,70,30,6,24,1
+all 11 tasks,Position,17,"a = 2, b = 1",2,1,whole episode,110,39,100,61,28,5,16,2
+Object,Task,17,released policy,0,0,-,30,0,30,0,,,,
+Object,Task,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,3,30,16,3,0,16,0
+Object,Task,17,"a = 2, b = 1",2,1,whole episode,30,3,30,6,3,0,6,0
+Goal,Task,17,released policy,0,0,-,30,2,20,20,,,,
+Goal,Task,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,2,20,20,1,1,0,0
+Goal,Task,17,"a = 2, b = 1",2,1,whole episode,30,1,20,20,1,2,0,0
+Spatial,Task,17,released policy,0,0,-,30,10,30,10,,,,
+Spatial,Task,17,"a = 5, b = 1 (the method)",5,1,whole episode,30,15,30,15,5,0,5,0
+Spatial,Task,17,"a = 2, b = 1",2,1,whole episode,30,14,30,14,4,0,4,0
+Long,Task,17,released policy,0,0,-,20,8,20,18,,,,
+Long,Task,17,"a = 5, b = 1 (the method)",5,1,whole episode,20,7,20,18,1,2,1,1
+Long,Task,17,"a = 2, b = 1",2,1,whole episode,20,8,20,18,1,1,1,1
+all 11 tasks,Task,17,released policy,0,0,-,110,20,100,48,,,,
+all 11 tasks,Task,17,"a = 5, b = 1 (the method)",5,1,whole episode,110,27,100,69,10,3,22,1
+all 11 tasks,Task,17,"a = 2, b = 1",2,1,whole episode,110,26,100,58,9,3,11,1
+Object,Original,7 and 17,released policy,0,0,-,60,59,60,60,,,,
+Object,Original,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,59,60,60,1,1,0,0
+Object,Original,7 and 17,"a = 2, b = 1",2,1,whole episode,60,59,60,60,1,1,0,0
+Object,Original,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,60,59,60,60,1,1,0,0
+Object,Original,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,29,30,30,0,1,0,0
+Goal,Original,7 and 17,released policy,0,0,-,60,56,40,40,,,,
+Goal,Original,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,58,40,40,2,0,0,0
+Goal,Original,7 and 17,"a = 2, b = 1",2,1,whole episode,60,55,40,40,2,3,0,0
+Goal,Original,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,60,58,40,40,3,1,0,0
+Goal,Original,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,30,20,20,1,0,0,0
+Spatial,Original,7 and 17,released policy,0,0,-,60,58,60,60,,,,
+Spatial,Original,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,57,60,59,2,3,0,1
+Spatial,Original,7 and 17,"a = 2, b = 1",2,1,whole episode,60,60,60,60,2,0,0,0
+Spatial,Original,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,60,60,60,60,2,0,0,0
+Spatial,Original,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,29,30,30,1,1,0,0
+Long,Original,7 and 17,released policy,0,0,-,40,39,40,40,,,,
+Long,Original,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,40,39,40,40,1,1,0,0
+Long,Original,7 and 17,"a = 2, b = 1",2,1,whole episode,40,37,40,40,0,2,0,0
+Long,Original,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,40,37,40,40,0,2,0,0
+Long,Original,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,17,20,20,0,2,0,0
+all 11 tasks,Original,7 and 17,released policy,0,0,-,220,212,200,200,,,,
+all 11 tasks,Original,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,220,213,200,199,6,5,0,1
+all 11 tasks,Original,7 and 17,"a = 2, b = 1",2,1,whole episode,220,211,200,200,5,6,0,0
+all 11 tasks,Original,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,220,214,200,200,6,4,0,0
+all 11 tasks,Original,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,105,100,100,2,4,0,0
+Object,Position,7 and 17,released policy,0,0,-,60,13,60,18,,,,
+Object,Position,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,43,60,47,32,2,30,1
+Object,Position,7 and 17,"a = 2, b = 1",2,1,whole episode,60,46,60,47,33,0,29,0
+Object,Position,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,21,30,23,16,0,15,0
+Object,Position,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,21,30,22,18,2,15,1
+Goal,Position,7 and 17,released policy,0,0,-,60,0,40,20,,,,
+Goal,Position,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,18,40,37,18,0,17,0
+Goal,Position,7 and 17,"a = 2, b = 1",2,1,whole episode,60,11,40,20,11,0,0,0
+Goal,Position,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,2,20,18,2,0,8,0
+Goal,Position,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,2,20,18,2,0,8,0
+Spatial,Position,7 and 17,released policy,0,0,-,60,14,60,37,,,,
+Spatial,Position,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,18,60,35,13,9,0,2
+Spatial,Position,7 and 17,"a = 2, b = 1",2,1,whole episode,60,18,60,32,12,8,0,5
+Spatial,Position,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,9,30,19,7,4,0,1
+Spatial,Position,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,12,30,19,8,2,0,1
+Long,Position,7 and 17,released policy,0,0,-,40,0,40,20,,,,
+Long,Position,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,40,3,40,20,3,0,0,0
+Long,Position,7 and 17,"a = 2, b = 1",2,1,whole episode,40,1,40,20,1,0,0,0
+Long,Position,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,0,20,10,0,0,0,0
+Long,Position,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,4,20,10,4,0,0,0
+all 11 tasks,Position,7 and 17,released policy,0,0,-,220,27,200,95,,,,
+all 11 tasks,Position,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,220,82,200,139,66,11,47,3
+all 11 tasks,Position,7 and 17,"a = 2, b = 1",2,1,whole episode,220,76,200,119,57,8,29,5
+all 11 tasks,Position,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,32,100,70,25,4,23,1
+all 11 tasks,Position,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,39,100,69,32,4,23,2
+Object,Task,7 and 17,released policy,0,0,-,60,2,60,2,,,,
+Object,Task,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,10,60,31,8,0,29,0
+Object,Task,7 and 17,"a = 2, b = 1",2,1,whole episode,60,9,60,14,7,0,12,0
+Object,Task,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,7,30,16,6,1,14,0
+Object,Task,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,8,30,16,7,1,14,0
+Goal,Task,7 and 17,released policy,0,0,-,60,6,40,40,,,,
+Goal,Task,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,6,40,40,2,2,0,0
+Goal,Task,7 and 17,"a = 2, b = 1",2,1,whole episode,60,6,40,40,3,3,0,0
+Goal,Task,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,3,20,20,0,1,0,0
+Goal,Task,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,4,20,20,0,0,0,0
+Spatial,Task,7 and 17,released policy,0,0,-,60,22,60,22,,,,
+Spatial,Task,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,60,32,60,32,10,0,10,0
+Spatial,Task,7 and 17,"a = 2, b = 1",2,1,whole episode,60,27,60,27,5,0,5,0
+Spatial,Task,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,30,15,30,16,3,0,4,0
+Spatial,Task,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,30,15,30,16,4,1,5,1
+Long,Task,7 and 17,released policy,0,0,-,40,16,40,36,,,,
+Long,Task,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,40,15,40,37,3,4,3,2
+Long,Task,7 and 17,"a = 2, b = 1",2,1,whole episode,40,17,40,37,2,1,2,1
+Long,Task,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,20,8,20,17,1,1,0,1
+Long,Task,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,20,6,20,17,0,2,0,1
+all 11 tasks,Task,7 and 17,released policy,0,0,-,220,46,200,100,,,,
+all 11 tasks,Task,7 and 17,"a = 5, b = 1 (the method)",5,1,whole episode,220,63,200,140,23,6,42,2
+all 11 tasks,Task,7 and 17,"a = 2, b = 1",2,1,whole episode,220,59,200,118,17,4,19,1
+all 11 tasks,Task,7 and 17,"a = 5, b = 1, until the first close",5,1,until the gripper first closes,110,33,100,69,10,3,18,1
+all 11 tasks,Task,7 and 17,"a = 5, b = 1, while the gripper is open",5,1,while the gripper command is open,110,33,100,69,11,4,19,2

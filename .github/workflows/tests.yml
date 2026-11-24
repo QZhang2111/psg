@@ -1,0 +1,25 @@
+# The checks that need no card and no openpi: the plain tests and the tables against the paper's numbers.
+# The tests that need openpi and its model run only where PSG_HOST_TESTS=1 is set (tests/conftest.py).
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install what the plain tests import, at the versions of the openpi environment
+        run: python -m pip install pytest==8.3.5 numpy==1.26.4 scipy==1.15.3 jax==0.5.3
+      - name: The plain tests
+        run: python -m pytest tests/
+      - name: The tables against the paper's numbers
+        run: python -m evaluation.tables.render --check

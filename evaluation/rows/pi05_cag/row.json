@@ -1,0 +1,15 @@
+{
+  "row": "pi05_cag",
+  "name": "π0.5 + CAG (training-free)",
+  "kind": "an inference-time method of another paper on the released π0.5-LIBERO checkpoint, run with the authors' code",
+  "environment": "openpi-cf",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "revision": "none (the bucket has no revisions)",
+    "licence": "not stated"
+  },
+  "code": {"address": "github.com/yuffish/LIBERO-CF", "revision": "8280a500a01f7f7d45efe202cb416ca362aa8c1a", "licence": "MIT"},
+  "method": "cag-training-free",
+  "method_settings": {"guidance_scale": 1.5, "source": "the CAG paper, main.tex L609-611"}
+}

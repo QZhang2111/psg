@@ -1,0 +1,95 @@
+{
+ "what": "Reading only: the direction of a recorded velocity term against the true direction to the requested object.",
+ "unit": {
+  "block": "OS-G",
+  "row": "pi05_psg"
+ },
+ "code_of_the_unit": {
+  "revision": "4c08b5aeb3daaf5a1b1036efe59d11ce68f6bfea",
+  "clean": true
+ },
+ "method": "psg",
+ "term": "v_g",
+ "weight": 5.0,
+ "weight_is": "the method's setting 'a'",
+ "episodes": 100,
+ "queries": 5764,
+ "queries_before_first_close": 1512,
+ "tasks": [
+  1,
+  3,
+  6,
+  8,
+  10,
+  15,
+  17,
+  18,
+  19,
+  20
+ ],
+ "episodes_with_reach_1": 50,
+ "output_scale": {
+  "scale": [
+   0.8422505002200572,
+   0.8278130002836404,
+   0.93731299948227,
+   0.12801500506128177,
+   0.1752330749327668,
+   0.25302446191035555,
+   0.9998004997731517
+  ],
+  "offset": [
+   0.0948754999976249,
+   0.03168800009118089,
+   -0.0001870001052112452,
+   0.012212000499328681,
+   0.005803354952982122,
+   0.05852225284563018,
+   -0.0001995003095730133
+  ],
+  "max_residual": [
+   1.5411413767374427e-07,
+   1.5369429595679662e-07,
+   1.701783580720928e-07,
+   2.2653988157594895e-08,
+   3.5906223105897084e-08,
+   4.5026978867657164e-08,
+   1.7908409155609206e-07
+  ],
+  "points": 57640,
+  "tolerance": 0.0001,
+  "holds": true
+ },
+ "axes": {
+  "displacement_m_per_action_unit": [
+   [
+    0.007874228851838852,
+    0.0005967283968147353
+   ],
+   [
+    -8.402380883728806e-05,
+    0.011567788042985977
+   ]
+  ],
+  "nearest_orthogonal": [
+   [
+    0.9993875560172425,
+    0.03499304042066839
+   ],
+   [
+    -0.034993040420668385,
+    0.9993875560172426
+   ]
+  ],
+  "angle_deg": -2.005362935973822,
+  "mirrored": false,
+  "action_axes_are_world_axes": true,
+  "applied_to_g": "none: g is compared with t as it is",
+  "policy_steps": 28794
+ },
+ "median_a_g_norm_before_first_close": 0.2910682345241947,
+ "median_a_g_norm_all_queries": 0.1537259673642079,
+ "median_cos_before_first_close": 0.31035049792976166,
+ "min_cos": -0.9999999771550386,
+ "units": "g, a_g_norm, act: executed-action units; t: m, world"
+}

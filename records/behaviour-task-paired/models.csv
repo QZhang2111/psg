@@ -1,0 +1,7 @@
+model,checkpoint,revision_or_digest,camera_px,noise_seeds,noise
+OpenVLA-OFT,moojink/openvla-7b-oft-finetuned-libero-object,4c89574e1c538b6c102f43f0526d60a9d3650148,256,7,none (L1 regression head); deterministic
+SmolVLA,lerobot/smolvla_libero,31d453f7edd78c839a8bbc39744a292686daf0de,360,7 17,flow matching; explicit paired noise per seed and replan
+TurboVLA,H-EmbodVis/TurboVLA checkpoints/libero/object.pth,f7b0f53afa248408d20748f2579e446c7ce4119e,256,7,none; deterministic
+pi0-FAST,openpi pi0_fast_libero (gs://openpi-assets/checkpoints/pi0_fast_libero),tree-sha256:493e5bbeb2854fb2e5c86f08e06f57236eefbc7fb4615a27907b4c0946d745ba,256,7 17,none (greedy FAST decoding); deterministic given the process seed
+pi0,openpi pi0_libero (gs://openpi-assets/checkpoints/pi0_libero),tree-sha256:20205f127b2880c117c74f09d8748f1e0de03a66503ba4e6eb3f45321149f1ea,256,7 17,flow matching; explicit paired noise per seed and replan
+pi0.5,openpi pi05_libero (gs://openpi-assets/checkpoints/pi05_libero),tree-sha256:42d571bd87f05f1182810f5a8bfa6d084c0d0dd277aff739bcf8f69868e6fb99,256,7 17,flow matching; explicit paired noise per seed and replan

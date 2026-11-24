@@ -1,0 +1,285 @@
+{
+ "block": "PP-G",
+ "title": "LIBERO-PRO Position Goal",
+ "benchmark": {
+  "name": "LIBERO-PRO",
+  "code": {
+   "address": "github.com/Zxy-MLlab/LIBERO-PRO",
+   "revision": "eafdb809426b13153aa1e4c42d6601844217dfec",
+   "licence": "MIT"
+  },
+  "files": {
+   "address": "huggingface.co/datasets/zhouxueyang/LIBERO-Pro",
+   "revision": "c86fc3b8293185a6f373677018ff3e37f8391602",
+   "licence": "CC-BY-4.0"
+  },
+  "suite": "libero_goal_swap",
+  "perturbation": "position",
+  "instruction_rule": "task.language (from the file name); the swap leaves the instruction unchanged",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f"
+ },
+ "base_suite": "libero_goal",
+ "environment": "sim-libero-pro",
+ "loader": "libero",
+ "rollout": {
+  "environment_seed": 7,
+  "settle_steps": 10,
+  "stop": "predicate",
+  "max_steps": 300
+ },
+ "seeds": [
+  7
+ ],
+ "start_states": "0-49",
+ "built_by": "generated from the benchmark's own files by a development script, not in this repository; this file is the definition",
+ "tasks": [
+  {
+   "index": 0,
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "bddl": "libero_goal_swap/open_the_middle_drawer_of_the_cabinet.bddl",
+   "init": "libero_goal_swap/open_the_middle_drawer_of_the_cabinet.pruned_init",
+   "bddl_sha256": "c89d9a1795775125a8233382317acec699eef865097717b7d0f360ff33842a79",
+   "init_sha256": "003535c27714a4cc51cb1574bdf16723597f2a9d932e800fb478f6c0982c772b",
+   "bddl_git_blob": "fcdaacb430613d11466afbeda7d913929e148648",
+   "init_git_blob": "b504c8031c0cbc1a8fc33740689251a0d92438d3",
+   "instruction": "open the middle drawer of the cabinet",
+   "reach": {
+    "rule": "first_contact",
+    "target": [
+     "wooden_cabinet_1:middle"
+    ]
+   },
+   "reach_source": "fixture state only (Open wooden_cabinet_1_middle_region)",
+   "swapped": [
+    "wine_rack_1",
+    "wooden_cabinet_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 1,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal_swap/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal_swap/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "64c1cfbd554f241b3881731df9def88e24ae1d9f42896584b7d1b0b3d036dee8",
+   "init_sha256": "3bb00b42caa00eea28b1c5b1a730d1cbbf680723c5e71fa53bf7c0d615ed2ce3",
+   "bddl_git_blob": "1e3bba685965cf232d83f941ec0b6952e4ac4f1d",
+   "init_git_blob": "cb59cf22839cd25b1de5724f5261d6b50855be5b",
+   "instruction": "put the bowl on the stove",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "flat_stove_1",
+    "wine_bottle_1",
+    "wooden_cabinet_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 2,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal_swap/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal_swap/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "5f3ee58250bc20bdf8d4585c858784346cb14df06aa57d8b8fbb12e600bec5e7",
+   "init_sha256": "66dd3dfdc126653e8c4706c3b6cccea6e0b00d0cefcdaa727aa8245cdbbb8606",
+   "bddl_git_blob": "45b46dce815de28533a6499caa2c4fd1646bf2a7",
+   "init_git_blob": "85d68dec9d091ef6ca5eca2b8953dc0bc0a13d50",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 3,
+   "task": "open_the_top_drawer_and_put_the_bowl_inside",
+   "bddl": "libero_goal_swap/open_the_top_drawer_and_put_the_bowl_inside.bddl",
+   "init": "libero_goal_swap/open_the_top_drawer_and_put_the_bowl_inside.pruned_init",
+   "bddl_sha256": "b59abad4375fbd0b3898daac0607d2a2303c644ffa17571d046434eee7a118fd",
+   "init_sha256": "a62c59a5af059cf77d97bd0b23280d329c2363556fd9dc9c34f34e1412d80571",
+   "bddl_git_blob": "0fd156b6749fa1e12ba22783ddb98e7f3a7520b7",
+   "init_git_blob": "7ecf49fb28082a52bf38b2c135dde20634651251",
+   "instruction": "open the top drawer and put the bowl inside",
+   "reach": {
+    "rule": "first_contact",
+    "target": [
+     "wooden_cabinet_1:top"
+    ]
+   },
+   "reach_source": "two stages; the first is a fixture (open), the second a grasp",
+   "swapped": [
+    "akita_black_bowl_1",
+    "cream_cheese_1"
+   ],
+   "requested_object_moves": false,
+   "reach_second_stage": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "task": "put_the_bowl_on_top_of_the_cabinet",
+   "bddl": "libero_goal_swap/put_the_bowl_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal_swap/put_the_bowl_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "a62b2bb692f0a2621dee56bf15f456d7342ace4677ba534cc4d65762af80d8c6",
+   "init_sha256": "077a6ba4855cafee642118c22176a4defb07d5cef71e33d7d7258871aeeb2e90",
+   "bddl_git_blob": "4c143ba78fab53e0ffae295eb8afd521bbfdb433",
+   "init_git_blob": "42ad1d3d591964169915a4eff1ec5dde2c2d09e2",
+   "instruction": "put the bowl on top of the cabinet",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 5,
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "bddl": "libero_goal_swap/push_the_plate_to_the_front_of_the_stove.bddl",
+   "init": "libero_goal_swap/push_the_plate_to_the_front_of_the_stove.pruned_init",
+   "bddl_sha256": "ed914104b87b781fd619ccaf92a20cdbeec74220f01851be23dda9587338ac29",
+   "init_sha256": "1641d87cb058a6dd80bf0c2dbddef4bb6707398cc0d4ab7a99284ee0a95ea4dd",
+   "bddl_git_blob": "f87137c39681d3952dc91025d7b219eaa8902aa4",
+   "init_git_blob": "d0cfa22855d383d07a6edbb7aebf6da04117099a",
+   "instruction": "push the plate to the front of the stove",
+   "reach": {
+    "rule": "first_contact",
+    "target": [
+     "plate_1"
+    ]
+   },
+   "reach_source": "push: the task needs no grasp",
+   "swapped": [
+    "plate_1",
+    "wine_bottle_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 6,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal_swap/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal_swap/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "53ab183c49350548625456d23574023165616a38bc06baf03403112eb47118fd",
+   "init_sha256": "99ed286464b1f7c8f852a2e3fe6d4d692a7a44e50d2a5b08d721705c6e390f54",
+   "bddl_git_blob": "7fbaba43432e93772a8c8c573dd536fcf6f8c141",
+   "init_git_blob": "6cb221d4c74e9996c9c0e1af177b4ef20610295e",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "cream_cheese_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "wine_bottle_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 7,
+   "task": "turn_on_the_stove",
+   "bddl": "libero_goal_swap/turn_on_the_stove.bddl",
+   "init": "libero_goal_swap/turn_on_the_stove.pruned_init",
+   "bddl_sha256": "098b3f1e3685b16296fb77653fa00311945e33243c98e477e859fb6f1a4b1f68",
+   "init_sha256": "2f34af5e6bfe46bfa247080aa60b342149f0e33692659044481b2ac757a52bd1",
+   "bddl_git_blob": "71bfe0e7f49ab2e2f108193a7f27391d84cb3d79",
+   "init_git_blob": "24d0e2c573c913ce652937f001772edcf6e31838",
+   "instruction": "turn on the stove",
+   "reach": {
+    "rule": "first_contact",
+    "target": [
+     "flat_stove_1"
+    ]
+   },
+   "reach_source": "fixture state only (Turnon flat_stove_1)",
+   "swapped": [
+    "cream_cheese_1",
+    "flat_stove_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 8,
+   "task": "put_the_bowl_on_the_plate",
+   "bddl": "libero_goal_swap/put_the_bowl_on_the_plate.bddl",
+   "init": "libero_goal_swap/put_the_bowl_on_the_plate.pruned_init",
+   "bddl_sha256": "a601bf1724195336d9eef6b7b4629cbe25b79adaa6112a91547100065c8e2b46",
+   "init_sha256": "bfc49fc47486fe872210529a8660da66e0eb6d589a28a3e9d924c6a97c13f73d",
+   "bddl_git_blob": "d2cfbcc21e71a1432f3d246fa40ee2b3ad1a0499",
+   "init_git_blob": "1af3d248ebb06120082d42289f9d7ba234112476",
+   "instruction": "put the bowl on the plate",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "akita_black_bowl_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "plate_1",
+    "wine_bottle_1"
+   ],
+   "requested_object_moves": true
+  },
+  {
+   "index": 9,
+   "task": "put_the_wine_bottle_on_the_rack",
+   "bddl": "libero_goal_swap/put_the_wine_bottle_on_the_rack.bddl",
+   "init": "libero_goal_swap/put_the_wine_bottle_on_the_rack.pruned_init",
+   "bddl_sha256": "b5c7107ba2eabe12c6ce7017abe72cb068f8d74c88ca65501870f8751d0ee0c1",
+   "init_sha256": "0f87de72a0dab4cb15efd1aa25fde03d16901c794909b30ea066bed87d75199f",
+   "bddl_git_blob": "eedb71771be43692ab23c27259ff6d028adf01ce",
+   "init_git_blob": "1ceab45d9bb4e47786a1de7d4a337d0aebb8c63e",
+   "instruction": "put the wine bottle on the rack",
+   "reach": {
+    "rule": "first_close",
+    "target": [
+     "wine_bottle_1"
+    ]
+   },
+   "reach_source": "the goal's moved object",
+   "swapped": [
+    "akita_black_bowl_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+   ],
+   "requested_object_moves": true
+  }
+ ]
+}

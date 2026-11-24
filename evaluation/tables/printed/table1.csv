@@ -1,0 +1,11 @@
+Method,row,LIBERO | Avg | Succ.,LIBERO-PRO Position | Object | Reach,LIBERO-PRO Position | Object | Succ.,LIBERO-PRO Position | Goal | Reach,LIBERO-PRO Position | Goal | Succ.,LIBERO-PRO Position | Spatial | Reach,LIBERO-PRO Position | Spatial | Succ.,LIBERO-PRO Position | Avg | Reach,LIBERO-PRO Position | Avg | Succ.,LIBERO-PRO Task | Avg | Reach,LIBERO-PRO Task | Avg | Succ.,LIBERO-Plus | Layout | Reach,LIBERO-Plus | Layout | Succ.
+OpenVLA-OFT,openvla_oft,96.8*,0.2,0.6,29.6,0.0,85.4,27.6,38.4,9.4,21.9,9.7,87.7,72.6
+SmolVLA,smolvla_exec10,87.3*,0.0,0.0,24.8,0.0,88.8,0.0,37.9,0.0,14.5,5.9,88.5,60.0
+TurboVLA,turbovla,97.7*,0.8,0.2,31.6,1.0,71.2,16.2,34.5,5.8,17.3,8.7,88.1,73.2
+π0-FAST,pi0_fast,85.5*,0.0,0.0,48.6,4.6,90.0,29.0,46.2,11.2,42.6,27.3,91.1,74.3
+π0,pi0,94.2*,0.0,0.2,22.8,14.0,90.0,8.4,37.6,7.5,33.0,24.7,90.4,76.9
+RSS†,pi05_rss,96.6*,78.8,54.8,66.8,30.2,90.4,53.2,78.7,46.1,58.8,37.1,96.2,85.4
+APT†,apt,96.1*,12.4,10.6,64.0,7.2,88.4,38.6,54.9,18.8,50.1,30.9,91.3,76.7
+π0.5,pi05,96.7,22.0,16.6,75.8,33.2,90.0,45.2,62.6,31.7,44.6,29.6,94.5,85.8
+π0.5 + CAG,pi05_cag,87.7,26.6,16.4,66.8,26.6,90.0,45.8,61.1,29.6,47.7,32.1,94.6,75.9
+π0.5 + PSG (Ours),pi05_psg,95.2,52.6,40.8,87.0,40.8,90.0,52.4,76.5,44.7,50.4,34.3,93.7,82.5

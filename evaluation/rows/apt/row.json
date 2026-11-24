@@ -1,0 +1,20 @@
+{
+  "row": "apt",
+  "name": "APT",
+  "kind": "another paper's own model (Qwen3-VL-2B with a diffusion action expert, the VLM frozen, fine-tuned on the four LIBERO suites), run with the authors' code and weights",
+  "environment": "apt",
+  "checkpoint": {
+    "address": "huggingface.co/KechunXu1/apt_models",
+    "revision": "cd98ada16d9089b47b8c626eca7cf18e51b02e37",
+    "file": "apt_vla_ftlibero/ckpt_latest.pt",
+    "licence": "none stated (no model card)"
+  },
+  "vlm": {
+    "address": "huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+    "revision_at_reading": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "note": "the release loads it by name (apt/encoders/qwen3_vl.py L85-93), at whatever the hub serves; the adapter reports the revision transformers loaded",
+    "licence": "Apache-2.0"
+  },
+  "code": {"address": "github.com/xukechun/APT", "revision": "d875861d93071d3bb627ca85166fe2723e923960", "licence": "none stated"},
+  "method": "none"
+}

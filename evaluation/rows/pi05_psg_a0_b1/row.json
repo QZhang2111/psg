@@ -1,0 +1,14 @@
+{
+  "row": "pi05_psg_a0_b1",
+  "name": "π0.5 + PSG with a = 0, b = 1: the direct contribution removed, the grounding contribution not amplified",
+  "kind": "PSG's sampler with other weights than the method's (a = 0, b = 1), an arm of the paper's Fig. 5 (b); no row of the paper's tables",
+  "environment": "openpi",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "tree_sha256": "42d571bd87f05f1182810f5a8bfa6d084c0d0dd277aff739bcf8f69868e6fb99",
+    "licence": "not stated"
+  },
+  "method": "psg-weights",
+  "weights": {"a": 0.0, "b": 1.0}
+}

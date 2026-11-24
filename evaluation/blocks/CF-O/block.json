@@ -1,0 +1,300 @@
+{
+  "block": "CF-O",
+  "title": "LIBERO-CF, CF-Object",
+  "base_suite": "libero_object",
+  "benchmark": {
+    "name": "LIBERO-CF",
+    "code": {
+      "address": "github.com/yuffish/LIBERO-CF",
+      "revision": "8280a500a01f7f7d45efe202cb416ca362aa8c1a",
+      "licence": "MIT"
+    },
+    "suite": "libero_cf_object",
+    "perturbation": "counterfactual instruction"
+  },
+  "environment": "sim-libero-cf",
+  "loader": "conditions",
+  "rollout": {
+    "environment_seed": 7,
+    "settle_steps": 10,
+    "max_steps": 280,
+    "stop": "predicate"
+  },
+  "seeds": [
+    7
+  ],
+  "start_states": "0-49",
+  "tasks": [
+    {
+      "index": 0,
+      "task": "01-pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/01-pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/01-pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "5c66e6eb1f3198a71b47439fc7db5718faefc1014d93690378f2a69b6f3312a5",
+      "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+      "bddl_git_blob": "8760adae16ad974acd17e33abb24001768cbc677",
+      "init_git_blob": "c8a28024715175478a1d7c19de32b5fbdb01d2a7",
+      "start_states_from": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "bddl_language": "Pick the cream cheese and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "cream_cheese_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in cream_cheese_1 basket_1_contain_region",
+          "in alphabet_soup_1 basket_1_contain_region"
+        ],
+        "success": "in cream_cheese_1 basket_1_contain_region"
+      },
+      "training_condition": "in alphabet_soup_1 basket_1_contain_region"
+    },
+    {
+      "index": 1,
+      "task": "02-pick_up_the_butter_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/02-pick_up_the_butter_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/02-pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "82453875507b173dab3463dc1f87ec78ccc897ff8321fab5d1c4a9d7d632ba30",
+      "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+      "bddl_git_blob": "8941c4dbab0ebdccd9b76c56d185a9bd4f7b06e1",
+      "init_git_blob": "cb56d5b03c033f2f29f37e68f5d0c91ccc23700b",
+      "start_states_from": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the butter and place it in the basket",
+      "bddl_language": "Pick the butter and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "butter_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in butter_1 basket_1_contain_region",
+          "in cream_cheese_1 basket_1_contain_region"
+        ],
+        "success": "in butter_1 basket_1_contain_region"
+      },
+      "training_condition": "in cream_cheese_1 basket_1_contain_region"
+    },
+    {
+      "index": 2,
+      "task": "03-pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/03-pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/03-pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "e58e62a5ff94b0e398fb4bf38263371437f668751475bee55fe620e3021d184d",
+      "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+      "bddl_git_blob": "11ea267c775e3f38c77c23a39c9f8cd627656a7d",
+      "init_git_blob": "8618561525caad694bc640208a6cd4f5ab20fdf4",
+      "start_states_from": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "bddl_language": "Pick the tomato sauce and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "tomato_sauce_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in tomato_sauce_1 basket_1_contain_region",
+          "in salad_dressing_1 basket_1_contain_region"
+        ],
+        "success": "in tomato_sauce_1 basket_1_contain_region"
+      },
+      "training_condition": "in salad_dressing_1 basket_1_contain_region"
+    },
+    {
+      "index": 3,
+      "task": "04-pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/04-pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/04-pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "11d1dd97a7cffdadead7f9c2b7d9eef5c22e04baa9c361f75c66d6798f41cbe9",
+      "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+      "bddl_git_blob": "74ed727b3b3092bd0607a995dbdf0f15486a5663",
+      "init_git_blob": "5dc495ff7714960245c644c2c644d346da1409cf",
+      "start_states_from": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "bddl_language": "Pick the salad dressing and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "salad_dressing_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in salad_dressing_1 basket_1_contain_region",
+          "in bbq_sauce_1 basket_1_contain_region"
+        ],
+        "success": "in salad_dressing_1 basket_1_contain_region"
+      },
+      "training_condition": "in bbq_sauce_1 basket_1_contain_region"
+    },
+    {
+      "index": 4,
+      "task": "05-pick_up_the_milk_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/05-pick_up_the_milk_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/05-pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "a1b9325623d05fd7c74e82c4564d8c0599b6eb5194f8be431d28d777eed02171",
+      "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+      "bddl_git_blob": "49909a1303eb2f38d04955f283ad4eae442e1899",
+      "init_git_blob": "6df12c615f529ef72fe8e07145a0208852b28b61",
+      "start_states_from": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the milk and place it in the basket",
+      "bddl_language": "Pick the milk and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "milk_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in milk_1 basket_1_contain_region",
+          "in ketchup_1 basket_1_contain_region"
+        ],
+        "success": "in milk_1 basket_1_contain_region"
+      },
+      "training_condition": "in ketchup_1 basket_1_contain_region"
+    },
+    {
+      "index": 5,
+      "task": "06-pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/06-pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/06-pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "d1e4ff34254a89fb8b3169f3925a442a9cc8ddbf237afb06e2acc4e2d331904a",
+      "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+      "bddl_git_blob": "000b419329a179bb78a62c7b2e4e27b59c30b996",
+      "init_git_blob": "47a87cb542111222e1501a17df82ca99836ecda2",
+      "start_states_from": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "bddl_language": "Pick the bbq sauce and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "bbq_sauce_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in bbq_sauce_1 basket_1_contain_region",
+          "in tomato_sauce_1 basket_1_contain_region"
+        ],
+        "success": "in bbq_sauce_1 basket_1_contain_region"
+      },
+      "training_condition": "in tomato_sauce_1 basket_1_contain_region"
+    },
+    {
+      "index": 6,
+      "task": "07-pick_up_the_ketchup_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/07-pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/07-pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "8f6c8c31a967dbfd7a1167161522de22933f53c6bbf7272bd6ec79bed4cd7235",
+      "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+      "bddl_git_blob": "cc570c4d5b84eab9a7c8b8f5a8fab39d7e5b0a03",
+      "init_git_blob": "53e1f79d98f962ad3061adbb96b25ed08f89e9fb",
+      "start_states_from": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the ketchup and place it in the basket",
+      "bddl_language": "Pick the ketchup and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "ketchup_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in ketchup_1 basket_1_contain_region",
+          "in butter_1 basket_1_contain_region"
+        ],
+        "success": "in ketchup_1 basket_1_contain_region"
+      },
+      "training_condition": "in butter_1 basket_1_contain_region"
+    },
+    {
+      "index": 7,
+      "task": "08-pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/08-pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/08-pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "8f5cbd3142e99082d529081695c6acad8a09a3faddbb7ec76396fd862e758d66",
+      "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+      "bddl_git_blob": "8635c729691865aae8589760179f292815d6bcb8",
+      "init_git_blob": "f7538a01fcc9d5cddda158930f80d65cd68ee2bd",
+      "start_states_from": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the orange juice and place it in the basket",
+      "bddl_language": "Pick the orange juice and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "orange_juice_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in orange_juice_1 basket_1_contain_region",
+          "in milk_1 basket_1_contain_region"
+        ],
+        "success": "in orange_juice_1 basket_1_contain_region"
+      },
+      "training_condition": "in milk_1 basket_1_contain_region"
+    },
+    {
+      "index": 8,
+      "task": "09-pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/09-pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/09-pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "8025191fdf0e046f3dd637cab89929951461a3068ded74f7cb4d217a60d7bbec",
+      "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+      "bddl_git_blob": "0c88c01ee3235accef5c998e82c6062eaa3aa510",
+      "init_git_blob": "cd395608818b106b937da11840dc30edd79ae197",
+      "start_states_from": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "bddl_language": "Pick the alphabet soup and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "alphabet_soup_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in alphabet_soup_1 basket_1_contain_region",
+          "in chocolate_pudding_1 basket_1_contain_region"
+        ],
+        "success": "in alphabet_soup_1 basket_1_contain_region"
+      },
+      "training_condition": "in chocolate_pudding_1 basket_1_contain_region"
+    },
+    {
+      "index": 9,
+      "task": "10-pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "bddl": "libero_cf_object/10-pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+      "init": "libero_cf_object/10-pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+      "bddl_sha256": "e903bd8a591ec614f0615fd6037f6ca71671813bb9358a3161c58c892a0da4a7",
+      "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+      "bddl_git_blob": "75d2cf6afcd325488c5911dd3ca64681fba6f881",
+      "init_git_blob": "43326337c89f0981439b76d40700496b0136b2f0",
+      "start_states_from": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "bddl_language": "Pick the chocolate pudding and place it in the basket",
+      "reach": {
+        "rule": "first_close",
+        "target": [
+          "chocolate_pudding_1"
+        ]
+      },
+      "predicate": {
+        "stop_any": [
+          "in chocolate_pudding_1 basket_1_contain_region",
+          "in orange_juice_1 basket_1_contain_region"
+        ],
+        "success": "in chocolate_pudding_1 basket_1_contain_region"
+      },
+      "training_condition": "in orange_juice_1 basket_1_contain_region"
+    }
+  ],
+  "generated_by": "generated from the release's files by a development script, not in this repository; this file is the definition"
+}

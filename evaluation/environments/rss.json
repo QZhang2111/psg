@@ -1,0 +1,21 @@
+{
+  "environment": "rss",
+  "used_by": ["pi05_rss"],
+  "python": "3.11",
+  "variables": {
+    "XLA_FLAGS": "--xla_gpu_deterministic_ops=true",
+    "TF_CUDNN_DETERMINISTIC": "1"
+  },
+  "why_the_variables": "The same as the openpi environment: two launches of the openpi rows on one card were bit-identical only with deterministic GPU operations. This row samples with openpi's JAX code too; its own repeatability is not measured.",
+  "sources": [
+    {"what": "RSS: an openpi fork with the guided π0.5 (models/pi0_cfg.py), its policy (policies/policy.py::CFGPolicy) and configs (training/misc/libero_cfg_config.py)", "address": "github.com/Doo-mon/RSS", "revision": "f51a0a3f7373b35a61b0690696496066bb5616b8", "licence": "Apache-2.0 (and the Gemma terms)"}
+  ],
+  "build": [
+    "git clone https://github.com/Doo-mon/RSS && git -C RSS checkout f51a0a3f7373b35a61b0690696496066bb5616b8",
+    "cd RSS && GIT_LFS_SKIP_SMUDGE=1 uv sync",
+    "the interpreter is RSS/.venv/bin/python; huggingface_hub must import (for the weights, see the row)"
+  ],
+  "check": "python -c \"from openpi.training import config; print(config.get_config('pi05_cfg_libero_caption_infer').model)\"",
+  "weights": ["snapshot_download(\"doomon/RSS_pi05_cfg_libero_caption\", revision=<the row's>, allow_patterns=[\"pi05_cfg_libero_caption_exp1/29999/params/*\", \"pi05_cfg_libero_caption_exp1/29999/assets/*\"]): 12.44 GB; train_state/ (32 GB) is not needed"]
+
+}

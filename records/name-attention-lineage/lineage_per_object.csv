@@ -1,0 +1,181 @@
+checkpoint,suite,object,object_stands,scenes,name_attention_median
+"PaliGemma 3B, 224 px",goal,akita_black_bowl_1,moved,12,4.563
+"PaliGemma 3B, 224 px",goal,cream_cheese_1,moved,12,1.586
+"PaliGemma 3B, 224 px",goal,plate_1,moved,12,3.962
+"PaliGemma 3B, 224 px",goal,wine_bottle_1,moved,12,8.610
+"PaliGemma 3B, 224 px",object,alphabet_soup_1,moved,12,1.425
+"PaliGemma 3B, 224 px",object,butter_1,moved,12,1.860
+"PaliGemma 3B, 224 px",object,cream_cheese_1,moved,12,2.154
+"PaliGemma 3B, 224 px",object,ketchup_1,moved,12,2.947
+"PaliGemma 3B, 224 px",object,milk_1,moved,12,1.833
+"PaliGemma 3B, 224 px",goal,akita_black_bowl_1,at its training place,2,4.247
+"PaliGemma 3B, 224 px",goal,cream_cheese_1,at its training place,2,2.025
+"PaliGemma 3B, 224 px",goal,plate_1,at its training place,2,4.002
+"PaliGemma 3B, 224 px",goal,wine_bottle_1,at its training place,2,8.404
+"PaliGemma 3B, 224 px",object,alphabet_soup_1,at its training place,2,0.789
+"PaliGemma 3B, 224 px",object,butter_1,at its training place,2,2.282
+"PaliGemma 3B, 224 px",object,cream_cheese_1,at its training place,2,1.831
+"PaliGemma 3B, 224 px",object,ketchup_1,at its training place,2,2.103
+"PaliGemma 3B, 224 px",object,milk_1,at its training place,2,1.647
+pi0 base,goal,akita_black_bowl_1,moved,12,0.749
+pi0 base,goal,cream_cheese_1,moved,12,0.688
+pi0 base,goal,plate_1,moved,12,0.896
+pi0 base,goal,wine_bottle_1,moved,12,0.775
+pi0 base,object,alphabet_soup_1,moved,12,0.619
+pi0 base,object,butter_1,moved,12,0.684
+pi0 base,object,cream_cheese_1,moved,12,0.722
+pi0 base,object,ketchup_1,moved,12,0.837
+pi0 base,object,milk_1,moved,12,0.873
+pi0 base,goal,akita_black_bowl_1,at its training place,2,1.222
+pi0 base,goal,cream_cheese_1,at its training place,2,0.711
+pi0 base,goal,plate_1,at its training place,2,1.527
+pi0 base,goal,wine_bottle_1,at its training place,2,1.520
+pi0 base,object,alphabet_soup_1,at its training place,2,0.709
+pi0 base,object,butter_1,at its training place,2,0.819
+pi0 base,object,cream_cheese_1,at its training place,2,0.880
+pi0 base,object,ketchup_1,at its training place,2,0.794
+pi0 base,object,milk_1,at its training place,2,0.868
+pi0 LIBERO,goal,akita_black_bowl_1,moved,12,1.106
+pi0 LIBERO,goal,cream_cheese_1,moved,12,0.599
+pi0 LIBERO,goal,plate_1,moved,12,1.619
+pi0 LIBERO,goal,wine_bottle_1,moved,12,1.436
+pi0 LIBERO,object,alphabet_soup_1,moved,12,0.502
+pi0 LIBERO,object,butter_1,moved,12,0.314
+pi0 LIBERO,object,cream_cheese_1,moved,12,0.319
+pi0 LIBERO,object,ketchup_1,moved,12,1.429
+pi0 LIBERO,object,milk_1,moved,12,1.094
+pi0 LIBERO,goal,akita_black_bowl_1,at its training place,2,3.581
+pi0 LIBERO,goal,cream_cheese_1,at its training place,2,0.825
+pi0 LIBERO,goal,plate_1,at its training place,2,1.305
+pi0 LIBERO,goal,wine_bottle_1,at its training place,2,4.044
+pi0 LIBERO,object,alphabet_soup_1,at its training place,2,0.312
+pi0 LIBERO,object,butter_1,at its training place,2,0.312
+pi0 LIBERO,object,cream_cheese_1,at its training place,2,0.336
+pi0 LIBERO,object,ketchup_1,at its training place,2,1.220
+pi0 LIBERO,object,milk_1,at its training place,2,1.091
+pi0-FAST base,goal,akita_black_bowl_1,moved,12,1.444
+pi0-FAST base,goal,cream_cheese_1,moved,12,0.632
+pi0-FAST base,goal,plate_1,moved,12,1.240
+pi0-FAST base,goal,wine_bottle_1,moved,12,0.455
+pi0-FAST base,object,alphabet_soup_1,moved,12,0.753
+pi0-FAST base,object,butter_1,moved,12,0.380
+pi0-FAST base,object,cream_cheese_1,moved,12,0.381
+pi0-FAST base,object,ketchup_1,moved,12,1.468
+pi0-FAST base,object,milk_1,moved,12,0.815
+pi0-FAST base,goal,akita_black_bowl_1,at its training place,2,2.113
+pi0-FAST base,goal,cream_cheese_1,at its training place,2,3.063
+pi0-FAST base,goal,plate_1,at its training place,2,1.504
+pi0-FAST base,goal,wine_bottle_1,at its training place,2,2.438
+pi0-FAST base,object,alphabet_soup_1,at its training place,2,1.043
+pi0-FAST base,object,butter_1,at its training place,2,0.427
+pi0-FAST base,object,cream_cheese_1,at its training place,2,0.836
+pi0-FAST base,object,ketchup_1,at its training place,2,1.542
+pi0-FAST base,object,milk_1,at its training place,2,2.026
+pi0-FAST LIBERO,goal,akita_black_bowl_1,moved,12,2.080
+pi0-FAST LIBERO,goal,cream_cheese_1,moved,12,3.318
+pi0-FAST LIBERO,goal,plate_1,moved,12,6.809
+pi0-FAST LIBERO,goal,wine_bottle_1,moved,12,0.189
+pi0-FAST LIBERO,object,alphabet_soup_1,moved,12,0.658
+pi0-FAST LIBERO,object,butter_1,moved,12,0.898
+pi0-FAST LIBERO,object,cream_cheese_1,moved,12,1.185
+pi0-FAST LIBERO,object,ketchup_1,moved,12,1.181
+pi0-FAST LIBERO,object,milk_1,moved,12,0.870
+pi0-FAST LIBERO,goal,akita_black_bowl_1,at its training place,2,10.267
+pi0-FAST LIBERO,goal,cream_cheese_1,at its training place,2,4.406
+pi0-FAST LIBERO,goal,plate_1,at its training place,2,8.838
+pi0-FAST LIBERO,goal,wine_bottle_1,at its training place,2,5.586
+pi0-FAST LIBERO,object,alphabet_soup_1,at its training place,2,1.646
+pi0-FAST LIBERO,object,butter_1,at its training place,2,2.425
+pi0-FAST LIBERO,object,cream_cheese_1,at its training place,2,6.211
+pi0-FAST LIBERO,object,ketchup_1,at its training place,2,2.675
+pi0-FAST LIBERO,object,milk_1,at its training place,2,1.317
+pi0.5 base,goal,akita_black_bowl_1,moved,12,4.653
+pi0.5 base,goal,cream_cheese_1,moved,12,1.994
+pi0.5 base,goal,plate_1,moved,12,3.861
+pi0.5 base,goal,wine_bottle_1,moved,12,8.050
+pi0.5 base,object,alphabet_soup_1,moved,12,1.769
+pi0.5 base,object,butter_1,moved,12,3.195
+pi0.5 base,object,cream_cheese_1,moved,12,1.186
+pi0.5 base,object,ketchup_1,moved,12,3.993
+pi0.5 base,object,milk_1,moved,12,1.869
+pi0.5 base,goal,akita_black_bowl_1,at its training place,2,6.299
+pi0.5 base,goal,cream_cheese_1,at its training place,2,1.987
+pi0.5 base,goal,plate_1,at its training place,2,7.294
+pi0.5 base,goal,wine_bottle_1,at its training place,2,6.920
+pi0.5 base,object,alphabet_soup_1,at its training place,2,1.734
+pi0.5 base,object,butter_1,at its training place,2,2.344
+pi0.5 base,object,cream_cheese_1,at its training place,2,1.068
+pi0.5 base,object,ketchup_1,at its training place,2,4.131
+pi0.5 base,object,milk_1,at its training place,2,2.077
+pi0.5 LIBERO,goal,akita_black_bowl_1,moved,12,7.400
+pi0.5 LIBERO,goal,cream_cheese_1,moved,12,9.281
+pi0.5 LIBERO,goal,plate_1,moved,12,9.398
+pi0.5 LIBERO,goal,wine_bottle_1,moved,12,12.639
+pi0.5 LIBERO,object,alphabet_soup_1,moved,12,5.231
+pi0.5 LIBERO,object,butter_1,moved,12,7.086
+pi0.5 LIBERO,object,cream_cheese_1,moved,12,9.677
+pi0.5 LIBERO,object,ketchup_1,moved,12,3.916
+pi0.5 LIBERO,object,milk_1,moved,12,1.520
+pi0.5 LIBERO,goal,akita_black_bowl_1,at its training place,2,9.068
+pi0.5 LIBERO,goal,cream_cheese_1,at its training place,2,7.736
+pi0.5 LIBERO,goal,plate_1,at its training place,2,7.626
+pi0.5 LIBERO,goal,wine_bottle_1,at its training place,2,17.492
+pi0.5 LIBERO,object,alphabet_soup_1,at its training place,2,4.788
+pi0.5 LIBERO,object,butter_1,at its training place,2,7.585
+pi0.5 LIBERO,object,cream_cheese_1,at its training place,2,8.497
+pi0.5 LIBERO,object,ketchup_1,at its training place,2,6.718
+pi0.5 LIBERO,object,milk_1,at its training place,2,2.187
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,akita_black_bowl_1,moved,12,6.905
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,cream_cheese_1,moved,12,2.009
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,plate_1,moved,12,4.746
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,wine_bottle_1,moved,12,7.800
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,alphabet_soup_1,moved,12,1.736
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,butter_1,moved,12,2.131
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,cream_cheese_1,moved,12,1.321
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,ketchup_1,moved,12,2.878
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,milk_1,moved,12,2.371
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,akita_black_bowl_1,at its training place,2,6.554
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,cream_cheese_1,at its training place,2,2.591
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,plate_1,at its training place,2,5.472
+"Prismatic DINOv2 + SigLIP 224 px, 7B",goal,wine_bottle_1,at its training place,2,6.999
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,alphabet_soup_1,at its training place,2,2.223
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,butter_1,at its training place,2,1.927
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,cream_cheese_1,at its training place,2,0.898
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,ketchup_1,at its training place,2,1.994
+"Prismatic DINOv2 + SigLIP 224 px, 7B",object,milk_1,at its training place,2,2.989
+OpenVLA 7B,goal,akita_black_bowl_1,moved,12,2.432
+OpenVLA 7B,goal,cream_cheese_1,moved,12,1.588
+OpenVLA 7B,goal,plate_1,moved,12,0.959
+OpenVLA 7B,goal,wine_bottle_1,moved,12,8.195
+OpenVLA 7B,object,alphabet_soup_1,moved,12,0.804
+OpenVLA 7B,object,butter_1,moved,12,1.146
+OpenVLA 7B,object,cream_cheese_1,moved,12,0.853
+OpenVLA 7B,object,ketchup_1,moved,12,0.816
+OpenVLA 7B,object,milk_1,moved,12,0.905
+OpenVLA 7B,goal,akita_black_bowl_1,at its training place,2,4.191
+OpenVLA 7B,goal,cream_cheese_1,at its training place,2,1.297
+OpenVLA 7B,goal,plate_1,at its training place,2,2.944
+OpenVLA 7B,goal,wine_bottle_1,at its training place,2,7.805
+OpenVLA 7B,object,alphabet_soup_1,at its training place,2,0.606
+OpenVLA 7B,object,butter_1,at its training place,2,1.269
+OpenVLA 7B,object,cream_cheese_1,at its training place,2,1.186
+OpenVLA 7B,object,ketchup_1,at its training place,2,1.145
+OpenVLA 7B,object,milk_1,at its training place,2,1.001
+"OpenVLA-OFT, LIBERO-Object",goal,akita_black_bowl_1,moved,12,0.916
+"OpenVLA-OFT, LIBERO-Object",goal,cream_cheese_1,moved,12,2.054
+"OpenVLA-OFT, LIBERO-Object",goal,plate_1,moved,12,1.268
+"OpenVLA-OFT, LIBERO-Object",goal,wine_bottle_1,moved,12,2.062
+"OpenVLA-OFT, LIBERO-Object",object,alphabet_soup_1,moved,12,1.463
+"OpenVLA-OFT, LIBERO-Object",object,butter_1,moved,12,1.626
+"OpenVLA-OFT, LIBERO-Object",object,cream_cheese_1,moved,12,1.609
+"OpenVLA-OFT, LIBERO-Object",object,ketchup_1,moved,12,1.244
+"OpenVLA-OFT, LIBERO-Object",object,milk_1,moved,12,1.628
+"OpenVLA-OFT, LIBERO-Object",goal,akita_black_bowl_1,at its training place,2,1.559
+"OpenVLA-OFT, LIBERO-Object",goal,cream_cheese_1,at its training place,2,1.780
+"OpenVLA-OFT, LIBERO-Object",goal,plate_1,at its training place,2,1.621
+"OpenVLA-OFT, LIBERO-Object",goal,wine_bottle_1,at its training place,2,1.971
+"OpenVLA-OFT, LIBERO-Object",object,alphabet_soup_1,at its training place,2,0.587
+"OpenVLA-OFT, LIBERO-Object",object,butter_1,at its training place,2,1.567
+"OpenVLA-OFT, LIBERO-Object",object,cream_cheese_1,at its training place,2,1.749
+"OpenVLA-OFT, LIBERO-Object",object,ketchup_1,at its training place,2,1.324
+"OpenVLA-OFT, LIBERO-Object",object,milk_1,at its training place,2,1.464

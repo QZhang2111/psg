@@ -1,0 +1,16 @@
+{
+  "row": "smolvla_exec10",
+  "name": "SmolVLA",
+  "kind": "a released LIBERO checkpoint with one setting of the release changed: 10 actions executed per query, where the release's default is 50. The SmolVLA row of the paper's tables",
+  "executed_per_query": 10,
+  "environment": "lerobot",
+  "checkpoint": {
+    "address": "huggingface.co/lerobot/smolvla_libero",
+    "hub_id": "lerobot/smolvla_libero",
+    "revision": "a24f1f380461b665158d52acd140152c79e8b36d",
+    "licence": "Apache-2.0",
+    "what": "lerobot's LIBERO checkpoint; from lerobot/smolvla_base, 16 VLM layers, chunk 50; not the paper's setup (no robot pretraining, replanning every step), and the paper does not say which checkpoint it evaluated"
+  },
+  "code": {"address": "github.com/huggingface/lerobot", "revision": "e581c1d5701f846788662079d4ac08835c96def9", "licence": "Apache-2.0"},
+  "method": "none"
+}

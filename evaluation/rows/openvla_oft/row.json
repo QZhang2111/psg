@@ -1,0 +1,17 @@
+{
+  "row": "openvla_oft",
+  "name": "OpenVLA-OFT",
+  "kind": "a released LIBERO checkpoint, run as released",
+  "environment": "openvla-oft",
+  "checkpoint": {
+    "address": "huggingface.co/moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "hub_id": "moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "revision": "638918f3d1c2e43a39a8a20772bdb8b91835e4b7",
+    "components": ["action_head--300000_checkpoint.pt", "proprio_projector--300000_checkpoint.pt", "dataset_statistics.json"],
+    "licence": "MIT",
+    "what": "the one policy for the four suites; the paper's headline 97.1 used four per-suite checkpoints, this one 96.8 (appendix)"
+  },
+  "code": {"address": "github.com/moojink/openvla-oft", "revision": "e4287e94541f459edc4feabc4e181f537cd569a8", "licence": "MIT"},
+  "needs_from_the_episode": ["suite"],
+  "method": "none"
+}

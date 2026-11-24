@@ -1,0 +1,353 @@
+{
+ "block": "PP-O",
+ "task_index": 6,
+ "task": "pick_up_the_butter_and_place_it_in_the_basket",
+ "state": 13,
+ "seed": 7,
+ "training_place_body": "tomato_sauce_1",
+ "training_place_body_is": "the entity the released run first closed on",
+ "base_offset_cm": [
+  60.0,
+  0.0
+ ],
+ "units": "cm, world frame; pulls in executed-action units",
+ "replay_holds": true,
+ "landings": "measured for every draw (x_cm, y_cm, z_cm): the gripper site after the chunk's first five actions run in the simulator from the replan's snapshot; role executed: the recorded episode's own; cmd_* kept",
+ "runs": {
+  "R": {
+   "arm": "N",
+   "cell": "PP-O.pi05.t6.s13.n7",
+   "source_row": "pi05",
+   "trace_sha256": "5667e07befb068c07b3b8f31cf9bd81486027a370422cf21827e4570c96e6069",
+   "prompt": "pick up the butter and place it in the basket",
+   "target": "butter_1",
+   "target_body": "butter_1_main",
+   "replans": 56,
+   "control_steps": 280,
+   "success": false,
+   "first_close": {
+    "step": 60,
+    "command": 49,
+    "body": "tomato_sauce_1",
+    "nearest_body": "tomato_sauce_1_main",
+    "distance_cm": 0.72,
+    "hand_world_cm": [
+     -14.662,
+     -24.745,
+     4.312
+    ]
+   },
+   "objects_start": {
+    "butter_1": {
+     "world_cm": [
+      4.91,
+      -9.856,
+      0.87
+     ],
+     "base_cm": [
+      64.91,
+      -9.856,
+      0.87
+     ]
+    },
+    "basket_1": {
+     "world_cm": [
+      0.563,
+      24.598,
+      -0.458
+     ],
+     "base_cm": [
+      60.563,
+      24.598,
+      -0.458
+     ]
+    },
+    "tomato_sauce_1": {
+     "world_cm": [
+      -11.976,
+      -23.994,
+      3.839
+     ],
+     "base_cm": [
+      48.024,
+      -23.994,
+      3.839
+     ]
+    },
+    "orange_juice_1": {
+     "world_cm": [
+      -15.0,
+      6.0,
+      6.974
+     ],
+     "base_cm": [
+      45.0,
+      6.0,
+      6.974
+     ]
+    },
+    "chocolate_pudding_1": {
+     "world_cm": [
+      10.0,
+      -20.0,
+      1.307
+     ],
+     "base_cm": [
+      70.0,
+      -20.0,
+      1.307
+     ]
+    },
+    "bbq_sauce_1": {
+     "world_cm": [
+      14.837,
+      3.911,
+      5.463
+     ],
+     "base_cm": [
+      74.837,
+      3.911,
+      5.463
+     ]
+    },
+    "ketchup_1": {
+     "world_cm": [
+      -20.0,
+      -8.0,
+      7.241
+     ],
+     "base_cm": [
+      40.0,
+      -8.0,
+      7.241
+     ]
+    }
+   },
+   "objects_start_frame": 10,
+   "psg": {
+    "a": 5.0,
+    "b": 1.0
+   },
+   "training_place_body": "tomato_sauce_1",
+   "checks": {
+    "frames_recorded": 291,
+    "frames_replayed": 291,
+    "queries_recorded": 56,
+    "queries_replayed": 56,
+    "same_frames_and_queries": true,
+    "queries_past_the_recorded_episode": 0,
+    "executed_actions_equal": true,
+    "max_hand_difference_cm": 2.9933003112651774e-06,
+    "max_hand_difference_cm_to_first_close": 1.4901161193847656e-06,
+    "max_body_difference_cm": 6.664001874625056e-06,
+    "max_body_difference_cm_to_first_close": 2.9802322387695312e-06,
+    "max_body_difference_at": {
+     "frame": 179,
+     "body": "robot0_link3"
+    },
+    "first_close_frame": 60,
+    "tolerance_cm_to_first_close": 0.2,
+    "holds": true,
+    "landings": {
+     "follow": {
+      "frames_recorded": 291,
+      "frames_replayed": 291,
+      "queries_recorded": 56,
+      "queries_replayed": 56,
+      "same_frames_and_queries": true,
+      "queries_past_the_recorded_episode": 0,
+      "executed_actions_equal": true,
+      "max_hand_difference_cm": 2.9933003112651774e-06,
+      "max_hand_difference_cm_to_first_close": 1.4901161193847656e-06,
+      "max_body_difference_cm": 6.664001874625056e-06,
+      "max_body_difference_cm_to_first_close": 2.9802322387695312e-06,
+      "max_body_difference_at": {
+       "frame": 179,
+       "body": "robot0_link3"
+      },
+      "first_close_frame": 60,
+      "tolerance_cm_to_first_close": 0.2,
+      "holds": true
+     },
+     "replans": 56,
+     "chunks_run_per_replan": 67,
+     "seconds": 167.6,
+     "snapshot_repeat_max_cm": 0.0,
+     "snapshot_repeat_tolerance_cm": 0.0001,
+     "snapshot_executed_vs_recorded_max_cm": 2.9860473315941912e-06,
+     "snapshot_executed_vs_recorded_max_cm_to_first_close": 3.725290298461914e-07,
+     "tolerance_cm_to_first_close": 0.2,
+     "holds": true
+    }
+   }
+  },
+  "P": {
+   "arm": "PSG",
+   "cell": "PP-O.pi05_psg.t6.s13.n7",
+   "source_row": "pi05_psg",
+   "trace_sha256": "12bcfb8e0cbf4eb743a17720838e2c107d83dbea03fc7f0ec6d8b457235be595",
+   "prompt": "pick up the butter and place it in the basket",
+   "target": "butter_1",
+   "target_body": "butter_1_main",
+   "replans": 25,
+   "control_steps": 122,
+   "success": true,
+   "first_close": {
+    "step": 60,
+    "command": 49,
+    "body": "butter_1",
+    "nearest_body": "butter_1_main",
+    "distance_cm": 1.92,
+    "hand_world_cm": [
+     4.062,
+     -11.604,
+     1.072
+    ]
+   },
+   "objects_start": {
+    "butter_1": {
+     "world_cm": [
+      4.91,
+      -9.856,
+      0.87
+     ],
+     "base_cm": [
+      64.91,
+      -9.856,
+      0.87
+     ]
+    },
+    "basket_1": {
+     "world_cm": [
+      0.563,
+      24.598,
+      -0.458
+     ],
+     "base_cm": [
+      60.563,
+      24.598,
+      -0.458
+     ]
+    },
+    "tomato_sauce_1": {
+     "world_cm": [
+      -11.976,
+      -23.994,
+      3.839
+     ],
+     "base_cm": [
+      48.024,
+      -23.994,
+      3.839
+     ]
+    },
+    "orange_juice_1": {
+     "world_cm": [
+      -15.0,
+      6.0,
+      6.974
+     ],
+     "base_cm": [
+      45.0,
+      6.0,
+      6.974
+     ]
+    },
+    "chocolate_pudding_1": {
+     "world_cm": [
+      10.0,
+      -20.0,
+      1.307
+     ],
+     "base_cm": [
+      70.0,
+      -20.0,
+      1.307
+     ]
+    },
+    "bbq_sauce_1": {
+     "world_cm": [
+      14.837,
+      3.911,
+      5.463
+     ],
+     "base_cm": [
+      74.837,
+      3.911,
+      5.463
+     ]
+    },
+    "ketchup_1": {
+     "world_cm": [
+      -20.0,
+      -8.0,
+      7.241
+     ],
+     "base_cm": [
+      40.0,
+      -8.0,
+      7.241
+     ]
+    }
+   },
+   "objects_start_frame": 10,
+   "psg": {
+    "a": 5.0,
+    "b": 1.0
+   },
+   "training_place_body": "tomato_sauce_1",
+   "checks": {
+    "frames_recorded": 133,
+    "frames_replayed": 133,
+    "queries_recorded": 25,
+    "queries_replayed": 25,
+    "same_frames_and_queries": true,
+    "queries_past_the_recorded_episode": 0,
+    "executed_actions_equal": true,
+    "max_hand_difference_cm": 6.1671559256104025e-06,
+    "max_hand_difference_cm_to_first_close": 7.450580596923828e-07,
+    "max_body_difference_cm": 0.014207686086373813,
+    "max_body_difference_cm_to_first_close": 2.9802322387695312e-06,
+    "max_body_difference_at": {
+     "frame": 132,
+     "body": "butter_1_main"
+    },
+    "first_close_frame": 60,
+    "tolerance_cm_to_first_close": 0.2,
+    "holds": true,
+    "landings": {
+     "follow": {
+      "frames_recorded": 133,
+      "frames_replayed": 133,
+      "queries_recorded": 25,
+      "queries_replayed": 25,
+      "same_frames_and_queries": true,
+      "queries_past_the_recorded_episode": 0,
+      "executed_actions_equal": true,
+      "max_hand_difference_cm": 6.1671559256104025e-06,
+      "max_hand_difference_cm_to_first_close": 7.450580596923828e-07,
+      "max_body_difference_cm": 0.014207686086373813,
+      "max_body_difference_cm_to_first_close": 2.9802322387695312e-06,
+      "max_body_difference_at": {
+       "frame": 132,
+       "body": "butter_1_main"
+      },
+      "first_close_frame": 60,
+      "tolerance_cm_to_first_close": 0.2,
+      "holds": true
+     },
+     "replans": 25,
+     "chunks_run_per_replan": 67,
+     "seconds": 70.3,
+     "snapshot_repeat_max_cm": 0.0,
+     "snapshot_repeat_tolerance_cm": 0.0001,
+     "snapshot_executed_vs_recorded_max_cm": 6.1671559256104025e-06,
+     "snapshot_executed_vs_recorded_max_cm_to_first_close": 7.450580596923828e-07,
+     "tolerance_cm_to_first_close": 0.2,
+     "holds": true
+    }
+   }
+  }
+ },
+ "measured_landings_hold": true
+}

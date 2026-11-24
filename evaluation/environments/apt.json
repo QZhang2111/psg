@@ -1,0 +1,28 @@
+{
+  "environment": "apt",
+  "used_by": [
+    "apt"
+  ],
+  "python": "3.10",
+  "sources": [
+    {
+      "what": "APT: Qwen3-VL-2B with a diffusion action expert; the planner apt/infer/planner.py::TrajPlanner",
+      "address": "github.com/xukechun/APT",
+      "revision": "d875861d93071d3bb627ca85166fe2723e923960",
+      "licence": "none stated (no LICENSE file; the API reports none)"
+    }
+  ],
+  "build": [
+    "git clone https://github.com/xukechun/APT && git -C APT checkout d875861d93071d3bb627ca85166fe2723e923960",
+    "conda create -n apt python=3.10 -y   (the release's README, 'Environment')",
+    "pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126",
+    "pip install -r APT/requirements.txt   (deepspeed and xformers may be left out: the README says inference does not need them)",
+    "pip install 'transformers>=4.57,<5' 'diffusers>=0.27,<0.36'   (tried 2026-11-12, resolved 4.57.6, 0.35.2, huggingface_hub 0.36.2; diffusers 0.41 imports huggingface_hub.resolve_revision, which only a hub of 1.x has, and transformers 4.57 needs a hub below 1.0. Also: the requirements' >=4.45 resolved 5.20.2, which has no Qwen3VLForConditionalGeneration.language_model; APT's encoder reads it, apt/encoders/qwen3_vl.py L118. 4.57.6 has it)",
+    "APT resolves every training dataset's path at import (data_utils/data_loc.py): set APT_DATA_LOC to a YAML mapping the 15 dataset names under one host key, and APT_DATA_LOC_HOST to that key; inference reads none of them",
+    "pip install scipy huggingface_hub   (the adapter's rotation conversion is scipy's, as in the release's evaluator; the weights come from the Hub)",
+    "APT has no package metadata: put the checkout on the environment's path once per machine, python -c \"import site, sys; open(site.getsitepackages()[0] + '/apt-checkout.pth', 'w').write(sys.argv[1])\" <the checkout>, so that `import apt, data_utils, infer_utils` resolve as when the README runs it from the checkout"
+  ],
+  "check": "python -c \"from apt.infer.planner import TrajPlanner; import scipy; print('ok')\"",
+  "weights": ["snapshot_download(\"KechunXu1/apt_models\", revision=<the row's>, allow_patterns=[\"apt_vla_ftlibero/*\"]): 1.236 GB", "the VLM, Qwen/Qwen3-VL-2B-Instruct at the row's revision: the release loads it by name, without a revision, so download it with snapshot_download into the Hugging Face cache (HF_HOME) itself and set HF_HUB_OFFLINE=1, so that the pinned snapshot is what loads. A cache put together by hand needs refs/main to hold the commit without a trailing newline: the hub library does not strip one"]
+
+}

@@ -1,0 +1,154 @@
+{
+ "block": "L-O",
+ "title": "LIBERO Object",
+ "benchmark": {
+  "name": "LIBERO",
+  "code": {
+   "address": "github.com/Lifelong-Robot-Learning/LIBERO",
+   "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+   "licence": "MIT"
+  },
+  "files": "in the code repository",
+  "suite": "libero_object",
+  "perturbation": "none",
+  "instruction_rule": "task.language (from the file name), as every release feeds it",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f",
+  "note": "run in the LIBERO-PRO environment: LIBERO-PRO @ eafdb809 carries these 80 files byte-identical (git blobs equal) and the same environment code"
+ },
+ "base_suite": "libero_object",
+ "environment": "sim-libero-pro",
+ "loader": "libero",
+ "rollout": {
+  "environment_seed": 7,
+  "settle_steps": 10,
+  "stop": "predicate",
+  "max_steps": 280
+ },
+ "seeds": [
+  7
+ ],
+ "start_states": "0-49",
+ "built_by": "generated from the benchmark's own files by a development script, not in this repository; this file is the definition",
+ "tasks": [
+  {
+   "index": 0,
+   "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+   "init_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+   "bddl_git_blob": "51dfce0f0244b4d5118ba283fbb6c5ce8360ac89",
+   "init_git_blob": "c8a28024715175478a1d7c19de32b5fbdb01d2a7",
+   "instruction": "pick up the alphabet soup and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 1,
+   "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+   "init_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+   "bddl_git_blob": "a4aa87fd74386ec9a1f034d45cb0e0beafda8def",
+   "init_git_blob": "cb56d5b03c033f2f29f37e68f5d0c91ccc23700b",
+   "instruction": "pick up the cream cheese and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 2,
+   "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+   "init_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+   "bddl_git_blob": "f83758a229d7a098eaaa1b2c1bd33093aa7c8e33",
+   "init_git_blob": "8618561525caad694bc640208a6cd4f5ab20fdf4",
+   "instruction": "pick up the salad dressing and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 3,
+   "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+   "init_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+   "bddl_git_blob": "543355b1164f931cc6da9be8131e6b8924992397",
+   "init_git_blob": "5dc495ff7714960245c644c2c644d346da1409cf",
+   "instruction": "pick up the bbq sauce and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 4,
+   "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+   "init_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+   "bddl_git_blob": "797e9f1cb35383e42c164d7ca311cefca4015869",
+   "init_git_blob": "6df12c615f529ef72fe8e07145a0208852b28b61",
+   "instruction": "pick up the ketchup and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 5,
+   "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+   "init_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+   "bddl_git_blob": "d48e7b34ce9325a9ba9f16aaf5bafb210ee1d028",
+   "init_git_blob": "47a87cb542111222e1501a17df82ca99836ecda2",
+   "instruction": "pick up the tomato sauce and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 6,
+   "task": "pick_up_the_butter_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+   "init_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+   "bddl_git_blob": "358024afc867808122cf9ea9dfbbdb82c86ad703",
+   "init_git_blob": "53e1f79d98f962ad3061adbb96b25ed08f89e9fb",
+   "instruction": "pick up the butter and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 7,
+   "task": "pick_up_the_milk_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+   "init_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+   "bddl_git_blob": "6b10f254cd992cdb1da1b2382b4dff396d43fc35",
+   "init_git_blob": "f7538a01fcc9d5cddda158930f80d65cd68ee2bd",
+   "instruction": "pick up the milk and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 8,
+   "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+   "init_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+   "bddl_git_blob": "1df6bc98ea2e209103a43d5dd2c23620fea4f12c",
+   "init_git_blob": "cd395608818b106b937da11840dc30edd79ae197",
+   "instruction": "pick up the chocolate pudding and place it in the basket",
+   "reach": null
+  },
+  {
+   "index": 9,
+   "task": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+   "bddl": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+   "init": "libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+   "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+   "init_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+   "bddl_git_blob": "517bb4eef4fb1ee89f85cfef4a200eb2a88d175a",
+   "init_git_blob": "43326337c89f0981439b76d40700496b0136b2f0",
+   "instruction": "pick up the orange juice and place it in the basket",
+   "reach": null
+  }
+ ]
+}

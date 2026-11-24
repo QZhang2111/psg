@@ -1,0 +1,15 @@
+{
+  "row": "pi05_oracle_push",
+  "name": "π0.5 + an oracle push toward the requested object",
+  "kind": "an instrument for the paper's Fig. 7 (b) on the released π0.5-LIBERO checkpoint: the row is told the requested object's position by the simulator; no row of the paper's tables",
+  "environment": "openpi",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "tree_sha256": "42d571bd87f05f1182810f5a8bfa6d084c0d0dd277aff739bcf8f69868e6fb99",
+    "licence": "not stated"
+  },
+  "method": "oracle-push",
+  "oracle": ["reach_target_position"],
+  "push": {"size": 1.164, "guard_radius_m": 0.05}
+}

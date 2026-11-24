@@ -1,0 +1,583 @@
+{
+ "first_close": {
+  "pi05|P|N0": {
+   "train=scene": 119,
+   "green": 43,
+   "other": 38,
+   "n": 200
+  },
+  "pi05|P|IS": {
+   "train=scene": 112,
+   "other": 82,
+   "green": 6,
+   "n": 200
+  },
+  "pi05|P|AS": {
+   "other": 35,
+   "green": 104,
+   "train=scene": 61,
+   "n": 200
+  },
+  "pi05|P|BS": {
+   "other": 103,
+   "train=scene": 86,
+   "green": 11,
+   "n": 200
+  },
+  "pi05|P|IN": {
+   "other": 77,
+   "train=scene": 119,
+   "no close": 1,
+   "green": 3,
+   "n": 200
+  },
+  "pi05|P|AN": {
+   "train=scene": 120,
+   "green": 47,
+   "other": 33,
+   "n": 200
+  },
+  "pi05|P|BN": {
+   "no close": 1,
+   "other": 81,
+   "train=scene": 115,
+   "green": 3,
+   "n": 200
+  },
+  "pi05|X|N0": {
+   "orange": 36,
+   "green": 2,
+   "blue": 158,
+   "other": 4,
+   "n": 200
+  },
+  "pi05|X|IS": {
+   "blue": 102,
+   "orange": 73,
+   "other": 25,
+   "n": 200
+  },
+  "pi05|X|AS": {
+   "orange": 39,
+   "green": 2,
+   "other": 26,
+   "blue": 133,
+   "n": 200
+  },
+  "pi05|X|BS": {
+   "blue": 51,
+   "orange": 102,
+   "other": 47,
+   "n": 200
+  },
+  "pi05|X|IN": {
+   "blue": 114,
+   "orange": 69,
+   "other": 16,
+   "no close": 1,
+   "n": 200
+  },
+  "pi05|X|AN": {
+   "orange": 35,
+   "green": 2,
+   "other": 6,
+   "blue": 157,
+   "n": 200
+  },
+  "pi05|X|BN": {
+   "blue": 111,
+   "orange": 72,
+   "other": 16,
+   "no close": 1,
+   "n": 200
+  },
+  "pi0|P|N0": {
+   "train=scene": 197,
+   "other": 3,
+   "n": 200
+  },
+  "pi0|P|IS": {
+   "train=scene": 126,
+   "other": 43,
+   "green": 31,
+   "n": 200
+  },
+  "pi0|P|AS": {
+   "train=scene": 198,
+   "other": 2,
+   "n": 200
+  },
+  "pi0|P|BS": {
+   "train=scene": 128,
+   "other": 45,
+   "green": 27,
+   "n": 200
+  },
+  "pi0|P|IN": {
+   "train=scene": 162,
+   "green": 11,
+   "other": 27,
+   "n": 200
+  },
+  "pi0|P|AN": {
+   "train=scene": 195,
+   "other": 5,
+   "n": 200
+  },
+  "pi0|P|BN": {
+   "train=scene": 159,
+   "green": 11,
+   "other": 30,
+   "n": 200
+  },
+  "pi0|X|N0": {
+   "blue": 196,
+   "other": 3,
+   "no close": 1,
+   "n": 200
+  },
+  "pi0|X|IS": {
+   "blue": 93,
+   "orange": 104,
+   "other": 3,
+   "n": 200
+  },
+  "pi0|X|AS": {
+   "blue": 191,
+   "other": 5,
+   "no close": 2,
+   "orange": 2,
+   "n": 200
+  },
+  "pi0|X|BS": {
+   "blue": 82,
+   "orange": 114,
+   "other": 3,
+   "no close": 1,
+   "n": 200
+  },
+  "pi0|X|IN": {
+   "orange": 90,
+   "blue": 105,
+   "other": 4,
+   "no close": 1,
+   "n": 200
+  },
+  "pi0|X|AN": {
+   "blue": 195,
+   "other": 5,
+   "n": 200
+  },
+  "pi0|X|BN": {
+   "orange": 92,
+   "blue": 106,
+   "other": 2,
+   "n": 200
+  }
+ },
+ "transitions": {
+  "pi0|P|AN": {
+   "train=scene->train=scene": 193,
+   "train=scene->other": 4,
+   "other->train=scene": 2,
+   "other->other": 1
+  },
+  "pi0|X|AN": {
+   "blue->blue": 192,
+   "other->blue": 2,
+   "no close->blue": 1,
+   "blue->other": 4,
+   "other->other": 1
+  },
+  "pi0|P|AS": {
+   "train=scene->train=scene": 197,
+   "other->train=scene": 1,
+   "other->other": 2
+  },
+  "pi0|X|AS": {
+   "blue->blue": 189,
+   "blue->other": 4,
+   "blue->no close": 1,
+   "other->blue": 1,
+   "no close->blue": 1,
+   "other->no close": 1,
+   "blue->orange": 2,
+   "other->other": 1
+  },
+  "pi0|P|BN": {
+   "train=scene->train=scene": 157,
+   "train=scene->green": 10,
+   "train=scene->other": 30,
+   "other->train=scene": 2,
+   "other->green": 1
+  },
+  "pi0|X|BN": {
+   "blue->orange": 88,
+   "blue->blue": 106,
+   "blue->other": 2,
+   "other->orange": 3,
+   "no close->orange": 1
+  },
+  "pi0|P|BS": {
+   "train=scene->train=scene": 125,
+   "train=scene->other": 45,
+   "train=scene->green": 27,
+   "other->train=scene": 3
+  },
+  "pi0|X|BS": {
+   "blue->blue": 82,
+   "blue->orange": 110,
+   "blue->other": 3,
+   "blue->no close": 1,
+   "other->orange": 3,
+   "no close->orange": 1
+  },
+  "pi0|P|IN": {
+   "train=scene->train=scene": 160,
+   "train=scene->green": 10,
+   "train=scene->other": 27,
+   "other->train=scene": 2,
+   "other->green": 1
+  },
+  "pi0|X|IN": {
+   "blue->orange": 86,
+   "blue->blue": 105,
+   "blue->other": 4,
+   "blue->no close": 1,
+   "other->orange": 3,
+   "no close->orange": 1
+  },
+  "pi0|P|IS": {
+   "train=scene->train=scene": 123,
+   "train=scene->other": 43,
+   "train=scene->green": 31,
+   "other->train=scene": 3
+  },
+  "pi0|X|IS": {
+   "blue->blue": 93,
+   "blue->orange": 100,
+   "blue->other": 3,
+   "other->orange": 3,
+   "no close->orange": 1
+  },
+  "pi05|P|AN": {
+   "train=scene->train=scene": 116,
+   "green->green": 42,
+   "green->train=scene": 1,
+   "train=scene->green": 2,
+   "other->other": 32,
+   "other->green": 3,
+   "train=scene->other": 1,
+   "other->train=scene": 3
+  },
+  "pi05|X|AN": {
+   "orange->orange": 35,
+   "green->green": 2,
+   "blue->other": 1,
+   "other->other": 4,
+   "blue->blue": 157,
+   "orange->other": 1
+  },
+  "pi05|P|AS": {
+   "train=scene->other": 8,
+   "green->green": 41,
+   "train=scene->green": 58,
+   "train=scene->train=scene": 53,
+   "other->train=scene": 8,
+   "other->other": 25,
+   "other->green": 5,
+   "green->other": 2
+  },
+  "pi05|X|AS": {
+   "orange->orange": 26,
+   "green->green": 2,
+   "orange->other": 8,
+   "orange->blue": 2,
+   "blue->other": 14,
+   "other->other": 4,
+   "blue->blue": 131,
+   "blue->orange": 13
+  },
+  "pi05|P|BN": {
+   "train=scene->no close": 1,
+   "green->other": 23,
+   "green->train=scene": 20,
+   "train=scene->train=scene": 91,
+   "train=scene->other": 27,
+   "other->other": 31,
+   "other->train=scene": 4,
+   "other->green": 3
+  },
+  "pi05|X|BN": {
+   "orange->blue": 8,
+   "orange->orange": 27,
+   "green->blue": 1,
+   "blue->blue": 101,
+   "other->blue": 1,
+   "blue->other": 16,
+   "blue->orange": 41,
+   "other->orange": 3,
+   "green->orange": 1,
+   "orange->no close": 1
+  },
+  "pi05|P|BS": {
+   "train=scene->other": 47,
+   "green->other": 31,
+   "train=scene->train=scene": 66,
+   "other->other": 25,
+   "other->train=scene": 8,
+   "green->train=scene": 12,
+   "train=scene->green": 6,
+   "other->green": 5
+  },
+  "pi05|X|BS": {
+   "orange->blue": 13,
+   "orange->orange": 17,
+   "orange->other": 6,
+   "green->blue": 2,
+   "blue->blue": 35,
+   "other->blue": 1,
+   "blue->orange": 82,
+   "blue->other": 41,
+   "other->orange": 3
+  },
+  "pi05|P|IN": {
+   "train=scene->other": 24,
+   "green->other": 22,
+   "green->train=scene": 20,
+   "green->no close": 1,
+   "train=scene->train=scene": 95,
+   "other->other": 31,
+   "other->train=scene": 4,
+   "other->green": 3
+  },
+  "pi05|X|IN": {
+   "orange->blue": 9,
+   "orange->orange": 27,
+   "green->blue": 1,
+   "blue->blue": 103,
+   "other->blue": 1,
+   "blue->other": 16,
+   "blue->orange": 38,
+   "other->orange": 3,
+   "green->orange": 1,
+   "blue->no close": 1
+  },
+  "pi05|P|IS": {
+   "train=scene->train=scene": 88,
+   "green->other": 23,
+   "green->train=scene": 20,
+   "other->other": 29,
+   "other->train=scene": 4,
+   "train=scene->other": 30,
+   "other->green": 5,
+   "train=scene->green": 1
+  },
+  "pi05|X|IS": {
+   "orange->blue": 7,
+   "orange->orange": 29,
+   "green->blue": 2,
+   "blue->blue": 92,
+   "other->blue": 1,
+   "blue->orange": 41,
+   "blue->other": 25,
+   "other->orange": 3
+  }
+ },
+ "predictions": [
+  {
+   "prediction": "π0.5 Position IS: green ≤ 10",
+   "met": true,
+   "numbers": {
+    "IS green": 6
+   }
+  },
+  {
+   "prediction": "π0.5 Position AS: green within 20 of N0",
+   "met": false,
+   "numbers": {
+    "AS green": 104,
+    "N0 green": 43
+   }
+  },
+  {
+   "prediction": "π0.5 Position BS: green ≤ 10",
+   "met": false,
+   "numbers": {
+    "BS green": 11
+   }
+  },
+  {
+   "prediction": "π0.5 Task-paired IS: blue within 20 of N0 or higher; green ≤ 2",
+   "met": false,
+   "numbers": {
+    "IS blue": 102,
+    "N0 blue": 158,
+    "IS green": 0
+   }
+  },
+  {
+   "prediction": "π0.5 Task-paired AS: blue at least 50 below N0",
+   "met": false,
+   "numbers": {
+    "AS blue": 133,
+    "N0 blue": 158
+   }
+  },
+  {
+   "prediction": "π0.5 Task-paired BS: blue ≤ 20",
+   "met": false,
+   "numbers": {
+    "BS blue": 51
+   }
+  },
+  {
+   "prediction": "π0 Position IS: training place within 10 of N0",
+   "met": false,
+   "numbers": {
+    "IS train=scene": 126,
+    "N0 train=scene": 197
+   }
+  },
+  {
+   "prediction": "π0 Position AS: training place within 10 of N0",
+   "met": true,
+   "numbers": {
+    "AS train=scene": 198,
+    "N0 train=scene": 197
+   }
+  },
+  {
+   "prediction": "π0 Position BS: training place within 10 of N0",
+   "met": false,
+   "numbers": {
+    "BS train=scene": 128,
+    "N0 train=scene": 197
+   }
+  },
+  {
+   "prediction": "π0 Task-paired IS: blue within 10 of N0",
+   "met": false,
+   "numbers": {
+    "IS blue": 93,
+    "N0 blue": 196
+   }
+  },
+  {
+   "prediction": "π0 Task-paired AS: blue ≤ 100, orange gains most of the rest (orange gain > half of blue's loss)",
+   "met": false,
+   "numbers": {
+    "AS blue": 191,
+    "blue lost": 5,
+    "orange gained": 2
+   }
+  },
+  {
+   "prediction": "π0 Task-paired BS: blue ≤ 20",
+   "met": false,
+   "numbers": {
+    "BS blue": 82
+   }
+  },
+  {
+   "prediction": "(behavioural) π0.5 Task-paired BS: orange ≥ 100",
+   "met": true,
+   "numbers": {
+    "BS orange": 102
+   }
+  },
+  {
+   "prediction": "π0.5 Position IN: within 20 of IS in every colour",
+   "met": true,
+   "numbers": {
+    "IN - IS": {
+     "green": -3,
+     "blue": 0,
+     "orange": 0,
+     "train=scene": 7,
+     "other": -5,
+     "no close": 1
+    }
+   }
+  },
+  {
+   "prediction": "π0.5 Task-paired IN: within 20 of IS in every colour",
+   "met": true,
+   "numbers": {
+    "IN - IS": {
+     "green": 0,
+     "blue": 12,
+     "orange": -4,
+     "train=scene": 0,
+     "other": -9,
+     "no close": 1
+    }
+   }
+  },
+  {
+   "prediction": "(behavioural) π0 Task-paired BS: orange ≥ 100",
+   "met": true,
+   "numbers": {
+    "BS orange": 114
+   }
+  },
+  {
+   "prediction": "π0 Position IN: within 20 of IS in every colour",
+   "met": false,
+   "numbers": {
+    "IN - IS": {
+     "green": -20,
+     "blue": 0,
+     "orange": 0,
+     "train=scene": 36,
+     "other": -16,
+     "no close": 0
+    }
+   }
+  },
+  {
+   "prediction": "π0 Task-paired IN: within 20 of IS in every colour",
+   "met": true,
+   "numbers": {
+    "IN - IS": {
+     "green": 0,
+     "blue": 12,
+     "orange": -14,
+     "train=scene": 0,
+     "other": 1,
+     "no close": 1
+    }
+   }
+  }
+ ],
+ "readouts": [
+  "pi0-seed17-20261103T122558Z-AN.json",
+  "pi0-seed17-20261103T122558Z-AS.json",
+  "pi0-seed17-20261103T122558Z-BN.json",
+  "pi0-seed17-20261103T122558Z-BS.json",
+  "pi0-seed17-20261103T122558Z-IN.json",
+  "pi0-seed17-20261103T122558Z-IS.json",
+  "pi0-seed17-20261103T122558Z-N0.json",
+  "pi0-seed7-20261103T101650Z-AN.json",
+  "pi0-seed7-20261103T101650Z-AS.json",
+  "pi0-seed7-20261103T101650Z-BN.json",
+  "pi0-seed7-20261103T101650Z-BS.json",
+  "pi0-seed7-20261103T101650Z-IN.json",
+  "pi0-seed7-20261103T101650Z-IS.json",
+  "pi0-seed7-20261103T101650Z-N0.json",
+  "pi05-seed17-20261103T114119Z-AN.json",
+  "pi05-seed17-20261103T114119Z-AS.json",
+  "pi05-seed17-20261103T114119Z-BN.json",
+  "pi05-seed17-20261103T114119Z-BS.json",
+  "pi05-seed17-20261103T114119Z-IN.json",
+  "pi05-seed17-20261103T114119Z-IS.json",
+  "pi05-seed17-20261103T114119Z-N0.json",
+  "pi05-seed7-20261103T101214Z-AN.json",
+  "pi05-seed7-20261103T101214Z-AS.json",
+  "pi05-seed7-20261103T101214Z-BN.json",
+  "pi05-seed7-20261103T101214Z-BS.json",
+  "pi05-seed7-20261103T101214Z-IN.json",
+  "pi05-seed7-20261103T101214Z-IS.json",
+  "pi05-seed7-20261103T101214Z-N0.json"
+ ]
+}

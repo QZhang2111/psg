@@ -1,0 +1,11 @@
+lineage,stage,checkpoint,layers_x_heads,name_attention_object_moved,name_attention_object_at_training_place,other_objects_name_object_moved,objects,scenes_moved,scenes_at_training_place,smallest_object_median_moved,largest_object_median_moved
+pi (shared root),VLM,"PaliGemma 3B, 224 px",18 x 8,2.699,2.460,1.833,9,108,18,1.425,8.610
+pi0,robot-pretrained base,pi0 base,18 x 8,0.755,0.963,0.702,9,108,18,0.619,0.896
+pi0,LIBERO fine-tuned,pi0 LIBERO,18 x 8,0.791,0.958,0.845,9,108,18,0.314,1.619
+pi0-FAST,robot-pretrained base,pi0-FAST base,18 x 8,0.741,1.446,0.775,9,108,18,0.380,1.468
+pi0-FAST,LIBERO fine-tuned,pi0-FAST LIBERO,18 x 8,1.229,3.871,0.631,9,108,18,0.189,6.809
+pi0.5,robot-pretrained base,pi0.5 base,18 x 8,2.898,3.060,1.715,9,108,18,1.186,8.050
+pi0.5,LIBERO fine-tuned,pi0.5 LIBERO,18 x 8,6.376,7.039,1.303,9,108,18,1.520,12.639
+OpenVLA,VLM,"Prismatic DINOv2 + SigLIP 224 px, 7B",32 x 32,2.954,2.909,1.863,9,108,18,1.321,7.800
+OpenVLA,robot-pretrained base,OpenVLA 7B,32 x 32,1.375,1.718,1.193,9,108,18,0.804,8.195
+OpenVLA,LIBERO fine-tuned,"OpenVLA-OFT, LIBERO-Object",32 x 32,1.499,1.446,1.427,9,108,18,0.916,2.062

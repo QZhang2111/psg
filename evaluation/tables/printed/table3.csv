@@ -1,0 +1,5 @@
+Method,row,LIBERO-CF | Spatial | Reach,LIBERO-CF | Spatial | Succ.,LIBERO-CF | Object | Reach,LIBERO-CF | Object | Succ.,LIBERO-CF | OOD | Reach,LIBERO-CF | OOD | Succ.,LIBERO-CF | Avg | Reach,LIBERO-CF | Avg | Succ.
+π0.5,pi05,30.3,24.7,7.4,5.6,15.5,6.5,17.7,12.3
+π0.5 + CAG-VA†,pi05_cag_va,41.7,32.5,22.6,13.8,27.9,10.7,30.7,19.0
+π0.5 + CAG,pi05_cag,41.9,34.5,13.6,8.4,18.7,10.8,24.7,17.9
+π0.5 + PSG (Ours),pi05_psg,38.8,30.9,28.4,12.8,25.5,10.8,30.9,18.2

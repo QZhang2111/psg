@@ -1,0 +1,16 @@
+# What a run writes, and this machine's interpreters
+/outputs/
+/environments.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+/build/
+
+# macOS
+.DS_Store
+._*

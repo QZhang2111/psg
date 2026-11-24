@@ -1,0 +1,22 @@
+{
+  "row": "turbovla",
+  "name": "TurboVLA",
+  "kind": "a released LIBERO checkpoint, run as released",
+  "environment": "turbovla",
+  "checkpoint": {
+    "address": "huggingface.co/H-EmbodVis/TurboVLA",
+    "hub_id": "H-EmbodVis/TurboVLA",
+    "revision": "9cdb576ed9c56039b9c1149142ed654e876bad76",
+    "file": "checkpoints/libero/turbovla_libero.pth",
+    "sha256": "d031ad7be05a2f5d04afb3194ed26b0cb46083685edee7a5e145078a37d26bab",
+    "stats_file": "libero_all4_stats.json",
+    "licence": "other (DINOv3 licence), as the card states",
+    "what": "one checkpoint for the four suites (per-suite files replaced 2026-09-02); no file says which training recipe produced it"
+  },
+  "encoders": {
+    "dinov3": {"hub_id": "facebook/dinov3-vitb16-pretrain-lvd1689m", "revision": "5931719e67bbdb9737e363e781fb0c67687896bc", "gated": "manual approval"},
+    "bert": {"hub_id": "google-bert/bert-base-uncased", "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"}
+  },
+  "code": {"address": "github.com/H-EmbodVis/TurboVLA", "revision": "650a288f829f549bea18e2173d3f51e77d3fbb74", "licence": "Apache-2.0"},
+  "method": "none"
+}

@@ -1,0 +1,124 @@
+{
+  "units": {
+    "P-t0": {
+      "training_slot": "A",
+      "scene_slot": "A",
+      "layout": {
+        "alphabet_soup_1": "F",
+        "salad_dressing_1": "B",
+        "cream_cheese_1": "C",
+        "milk_1": "D",
+        "tomato_sauce_1": "E",
+        "butter_1": "A"
+      }
+    },
+    "P-t1": {
+      "training_slot": "B",
+      "scene_slot": "B",
+      "layout": {
+        "cream_cheese_1": "A",
+        "alphabet_soup_1": "B",
+        "milk_1": "C",
+        "tomato_sauce_1": "D",
+        "butter_1": "E",
+        "orange_juice_1": "F"
+      }
+    },
+    "P-t2": {
+      "training_slot": "B",
+      "scene_slot": "B",
+      "layout": {
+        "salad_dressing_1": "F",
+        "ketchup_1": "A",
+        "alphabet_soup_1": "C",
+        "cream_cheese_1": "D",
+        "milk_1": "E",
+        "tomato_sauce_1": "B"
+      }
+    },
+    "P-t3": {
+      "training_slot": "B",
+      "scene_slot": "B",
+      "layout": {
+        "bbq_sauce_1": "A",
+        "chocolate_pudding_1": "B",
+        "ketchup_1": "C",
+        "salad_dressing_1": "D",
+        "alphabet_soup_1": "E",
+        "cream_cheese_1": "F"
+      }
+    },
+    "P-t4": {
+      "training_slot": "A",
+      "scene_slot": "A",
+      "layout": {
+        "ketchup_1": "E",
+        "bbq_sauce_1": "B",
+        "salad_dressing_1": "C",
+        "alphabet_soup_1": "D",
+        "cream_cheese_1": "A",
+        "milk_1": "F"
+      }
+    },
+    "P-t5": {
+      "training_slot": "B",
+      "scene_slot": "B",
+      "layout": {
+        "tomato_sauce_1": "A",
+        "milk_1": "B",
+        "butter_1": "C",
+        "orange_juice_1": "D",
+        "chocolate_pudding_1": "E",
+        "bbq_sauce_1": "F"
+      }
+    },
+    "P-t6": {
+      "training_slot": "A",
+      "scene_slot": "A",
+      "layout": {
+        "butter_1": "B",
+        "tomato_sauce_1": "A",
+        "orange_juice_1": "C",
+        "chocolate_pudding_1": "D",
+        "bbq_sauce_1": "E",
+        "ketchup_1": "F"
+      }
+    },
+    "P-t7": {
+      "training_slot": "A",
+      "scene_slot": "A",
+      "layout": {
+        "milk_1": "B",
+        "cream_cheese_1": "A",
+        "tomato_sauce_1": "C",
+        "butter_1": "D",
+        "orange_juice_1": "E",
+        "chocolate_pudding_1": "F"
+      }
+    },
+    "P-t8": {
+      "training_slot": "A",
+      "scene_slot": "A",
+      "layout": {
+        "chocolate_pudding_1": "D",
+        "orange_juice_1": "B",
+        "bbq_sauce_1": "C",
+        "ketchup_1": "A",
+        "salad_dressing_1": "E",
+        "alphabet_soup_1": "F"
+      }
+    },
+    "P-t9": {
+      "training_slot": "B",
+      "scene_slot": "B",
+      "layout": {
+        "orange_juice_1": "C",
+        "butter_1": "A",
+        "chocolate_pudding_1": "B",
+        "bbq_sauce_1": "D",
+        "ketchup_1": "E",
+        "salad_dressing_1": "F"
+      }
+    }
+  }
+}

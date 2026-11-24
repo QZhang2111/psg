@@ -1,0 +1,598 @@
+{
+ "what": "Reading only: the direction of a recorded velocity term against the true direction to the requested object.",
+ "unit": {
+  "block": "OS-O",
+  "row": "pi05_psg"
+ },
+ "code_of_the_unit": {
+  "revision": "4c08b5aeb3daaf5a1b1036efe59d11ce68f6bfea",
+  "clean": true
+ },
+ "method": "psg",
+ "term": "v_g",
+ "weight": 5.0,
+ "weight_is": "the method's setting 'a'",
+ "episodes": 689,
+ "queries": 33622,
+ "queries_before_first_close": 8834,
+ "tasks": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69
+ ],
+ "episodes_with_reach_1": 380,
+ "output_scale": {
+  "scale": [
+   0.842250500217466,
+   0.8278130001081349,
+   0.9373129999763365,
+   0.12801500504839464,
+   0.17523307511749064,
+   0.25302446208478585,
+   0.999800500309712
+  ],
+  "offset": [
+   0.0948755000396575,
+   0.03168799998980962,
+   -0.00018700003099226186,
+   0.012212000476797989,
+   0.005803354975467887,
+   0.05852225286780678,
+   -0.00019950006720085488
+  ],
+  "max_residual": [
+   1.601328263323154e-07,
+   1.4866740216668006e-07,
+   1.7122271533942524e-07,
+   2.0429368030594475e-08,
+   2.802635040710655e-08,
+   3.96959037862743e-08,
+   1.7901650495311117e-07
+  ],
+  "points": 336220,
+  "tolerance": 0.0001,
+  "holds": true
+ },
+ "axes": {
+  "displacement_m_per_action_unit": [
+   [
+    0.008710682192466184,
+    -0.00029308504477124433
+   ],
+   [
+    -6.508095554703738e-05,
+    0.012639841352046476
+   ]
+  ],
+  "nearest_orthogonal": [
+   [
+    0.9999429834317305,
+    -0.010678477684079299
+   ],
+   [
+    0.010678477684079292,
+    0.9999429834317308
+   ]
+  ],
+  "angle_deg": 0.6118433313689363,
+  "mirrored": false,
+  "action_axes_are_world_axes": true,
+  "applied_to_g": "none: g is compared with t as it is",
+  "policy_steps": 167625
+ },
+ "median_a_g_norm_before_first_close": 0.12747337755938065,
+ "median_a_g_norm_all_queries": 0.07065254288052128,
+ "median_cos_before_first_close": 0.16193844020130274,
+ "min_cos": -0.9999999985272311,
+ "units": "g, a_g_norm, act: executed-action units; t: m, world",
+ "places": {
+  "training": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 2806,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bbq_sauce_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "butter_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "chocolate_pudding_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "cream_cheese_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ketchup_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "milk_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "orange_juice_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "salad_dressing_1": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tomato_sauce_1": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "x2y3": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 5266,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    16.45,
+    27.798,
+    40.152
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     17.029,
+     17.029,
+     17.029
+    ],
+    "bbq_sauce_1": [
+     38.075,
+     38.448,
+     40.152
+    ],
+    "butter_1": [
+     16.45,
+     17.242,
+     17.419
+    ],
+    "chocolate_pudding_1": [
+     17.029,
+     17.029,
+     17.029
+    ],
+    "cream_cheese_1": [
+     38.631,
+     39.224,
+     39.648
+    ],
+    "ketchup_1": [
+     17.029,
+     17.029,
+     17.029
+    ],
+    "milk_1": [
+     16.531,
+     17.029,
+     17.521
+    ],
+    "orange_juice_1": [
+     39.051,
+     39.051,
+     39.051
+    ],
+    "salad_dressing_1": [
+     39.051,
+     39.051,
+     39.051
+    ],
+    "tomato_sauce_1": [
+     39.051,
+     39.051,
+     39.051
+    ]
+   }
+  },
+  "x3y3": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 5048,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    10.848,
+    21.431,
+    33.106
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     11.402,
+     11.402,
+     11.402
+    ],
+    "bbq_sauce_1": [
+     31.041,
+     31.486,
+     33.106
+    ],
+    "butter_1": [
+     10.848,
+     11.637,
+     11.822
+    ],
+    "chocolate_pudding_1": [
+     11.402,
+     11.402,
+     11.402
+    ],
+    "cream_cheese_1": [
+     31.57,
+     32.147,
+     32.59
+    ],
+    "ketchup_1": [
+     11.402,
+     11.402,
+     11.402
+    ],
+    "milk_1": [
+     10.899,
+     11.395,
+     11.807
+    ],
+    "orange_juice_1": [
+     32.016,
+     32.016,
+     32.016
+    ],
+    "salad_dressing_1": [
+     32.016,
+     32.016,
+     32.016
+    ],
+    "tomato_sauce_1": [
+     32.016,
+     32.016,
+     32.016
+    ]
+   }
+  },
+  "x4y3": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 5047,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    12.676,
+    19.806,
+    27.926
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     13.038,
+     13.038,
+     13.038
+    ],
+    "bbq_sauce_1": [
+     25.929,
+     26.37,
+     27.926
+    ],
+    "butter_1": [
+     12.676,
+     13.042,
+     13.683
+    ],
+    "chocolate_pudding_1": [
+     13.038,
+     13.038,
+     13.038
+    ],
+    "cream_cheese_1": [
+     26.476,
+     27.05,
+     27.426
+    ],
+    "ketchup_1": [
+     13.038,
+     13.038,
+     13.038
+    ],
+    "milk_1": [
+     12.743,
+     13.051,
+     13.27
+    ],
+    "orange_juice_1": [
+     26.926,
+     26.926,
+     26.926
+    ],
+    "salad_dressing_1": [
+     26.926,
+     26.926,
+     26.926
+    ],
+    "tomato_sauce_1": [
+     26.926,
+     26.926,
+     26.926
+    ]
+   }
+  },
+  "x5y8": {
+   "episodes": 89,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 4847,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    23.713,
+    41.225,
+    43.126
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     41.225,
+     42.084,
+     42.544
+    ],
+    "bbq_sauce_1": [
+     23.713,
+     25.392,
+     25.917
+    ],
+    "butter_1": [
+     42.139,
+     42.321,
+     43.126
+    ],
+    "chocolate_pudding_1": [
+     42.543,
+     42.544,
+     42.544
+    ],
+    "cream_cheese_1": [
+     24.502,
+     24.955,
+     25.447
+    ],
+    "ketchup_1": [
+     40.374,
+     42.544,
+     42.544
+    ],
+    "milk_1": [
+     42.091,
+     42.373,
+     42.936
+    ],
+    "orange_juice_1": [
+     23.816,
+     25.0,
+     25.0
+    ],
+    "salad_dressing_1": [
+     25.0,
+     25.0,
+     25.0
+    ],
+    "tomato_sauce_1": [
+     24.953,
+     25.0,
+     25.004
+    ]
+   }
+  },
+  "x6y6": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 5328,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    10.128,
+    22.36,
+    33.582
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     33.015,
+     33.015,
+     33.015
+    ],
+    "bbq_sauce_1": [
+     10.128,
+     11.841,
+     12.196
+    ],
+    "butter_1": [
+     32.628,
+     32.802,
+     33.582
+    ],
+    "chocolate_pudding_1": [
+     33.015,
+     33.015,
+     33.015
+    ],
+    "cream_cheese_1": [
+     10.587,
+     10.993,
+     11.554
+    ],
+    "ketchup_1": [
+     33.015,
+     33.015,
+     33.015
+    ],
+    "milk_1": [
+     32.524,
+     33.035,
+     33.499
+    ],
+    "orange_juice_1": [
+     11.18,
+     11.18,
+     11.18
+    ],
+    "salad_dressing_1": [
+     11.18,
+     11.18,
+     11.18
+    ],
+    "tomato_sauce_1": [
+     11.18,
+     11.18,
+     11.18
+    ]
+   }
+  },
+  "x6y8": {
+   "episodes": 100,
+   "episodes_without_a_distance": 0,
+   "lines_with_a_distance": 5280,
+   "lines_without_a_distance": 0,
+   "distance_cm_min_median_max": [
+    25.934,
+    37.442,
+    48.03
+   ],
+   "distance_cm_min_median_max_by_target": {
+    "alphabet_soup_1": [
+     47.434,
+     47.434,
+     47.434
+    ],
+    "bbq_sauce_1": [
+     25.934,
+     27.487,
+     27.923
+    ],
+    "butter_1": [
+     47.051,
+     47.254,
+     48.03
+    ],
+    "chocolate_pudding_1": [
+     47.434,
+     47.434,
+     47.434
+    ],
+    "cream_cheese_1": [
+     26.43,
+     26.803,
+     27.376
+    ],
+    "ketchup_1": [
+     47.434,
+     47.434,
+     47.434
+    ],
+    "milk_1": [
+     46.961,
+     47.385,
+     47.959
+    ],
+    "orange_juice_1": [
+     26.926,
+     26.926,
+     26.926
+    ],
+    "salad_dressing_1": [
+     26.926,
+     26.926,
+     26.926
+    ],
+    "tomato_sauce_1": [
+     26.926,
+     26.926,
+     26.926
+    ]
+   }
+  }
+ }
+}

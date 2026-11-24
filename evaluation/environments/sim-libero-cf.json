@@ -1,0 +1,20 @@
+{
+  "environment": "sim-libero-cf",
+  "used_by": ["CF-S", "CF-O", "CF-OOD"],
+  "python": "3.8",
+  "sources": [
+    {"what": "LIBERO-CF (the benchmark: a fork of LIBERO with the CF suites, their conditions and the OR termination)", "address": "github.com/yuffish/LIBERO-CF", "revision": "8280a500a01f7f7d45efe202cb416ca362aa8c1a", "licence": "MIT"}
+  ],
+  "build": [
+    "git clone https://github.com/yuffish/LIBERO-CF && git -C LIBERO-CF checkout 8280a500a01f7f7d45efe202cb416ca362aa8c1a",
+    "cd LIBERO-CF && uv venv --python 3.8 .venv",
+    "uv pip sync requirements.txt requirements_libero.txt --extra-index-url https://download.pytorch.org/whl/cu113 --index-strategy=unsafe-best-match   (the release's own pins: robosuite 1.4.1, mujoco 3.2.3, numpy 1.22.4, torch 1.11.0, imageio 2.35.1, imageio-ffmpeg 0.5.1)",
+    "uv pip install -e .",
+    "the interpreter is LIBERO-CF/.venv/bin/python"
+  ],
+  "notes": [
+    "The release's own commands (README, 'Installation'); openpi-client is not needed: the evaluation is this repository's.",
+    "The release's evaluator renders with SegmentationRenderEnv when it imports (eval/main_cf.py L460-466) and with OffScreenRenderEnv otherwise; which the loader uses is the loader's and is recorded."
+  ],
+  "check": "python -c \"from libero.libero import benchmark; d = benchmark.get_benchmark_dict(); print([d[s]().n_tasks for s in ('libero_cf_spatial', 'libero_cf_object', 'libero_cf_ood')])\"   (expected [15, 10, 15])"
+}

@@ -1,0 +1,109 @@
+{
+  "what": "The paper's Tables 1-3 as data: which row of this repository is which line, which block is which column, and the rule of every average. `python -m evaluation.tables.render` reads this file and `results/`; nothing of it is in code.",
+  "cell": "A number is a percentage of a unit's episodes: 100 x (episodes with success = 1, or with reach = 1) / (episodes of the unit). One decimal.",
+  "rounding": "From the exact fraction, to one decimal, a half rounded up (83.75 prints as 83.8).",
+  "marks": {"†": "requires training", "*": "reported by the authors (cited_libero.csv)"},
+  "tables": [
+    {
+      "table": 1,
+      "caption": "Results on LIBERO, LIBERO-PRO and LIBERO-Plus.",
+      "rows": [
+        {"label": "OpenVLA-OFT", "row": "openvla_oft", "libero": "cited"},
+        {"label": "SmolVLA", "row": "smolvla_exec10", "libero": "cited"},
+        {"label": "TurboVLA", "row": "turbovla", "libero": "cited"},
+        {"label": "π0-FAST", "row": "pi0_fast", "libero": "cited"},
+        {"label": "π0", "row": "pi0", "libero": "cited"},
+        {"label": "RSS†", "row": "pi05_rss", "libero": "cited"},
+        {"label": "APT†", "row": "apt", "libero": "cited"},
+        {"label": "π0.5", "row": "pi05", "libero": "measured"},
+        {"label": "π0.5 + CAG", "row": "pi05_cag", "libero": "measured"},
+        {"label": "π0.5 + PSG (Ours)", "row": "pi05_psg", "libero": "measured"}
+      ],
+      "columns": [
+        {
+          "group": "LIBERO", "name": "Avg", "metrics": ["success"],
+          "mean_of_blocks": ["L-S", "L-O", "L-G", "L-L"],
+          "rule": "The mean of the four suites' success percentages (Spatial, Object, Goal, Long; 500 episodes each). For a row marked `cited` the number its authors report, from cited_libero.csv, printed with *.",
+          "or_cited": "libero"
+        },
+        {"group": "LIBERO-PRO Position", "name": "Object", "metrics": ["reach", "success"], "block": "PP-O"},
+        {"group": "LIBERO-PRO Position", "name": "Goal", "metrics": ["reach", "success"], "block": "PP-G"},
+        {"group": "LIBERO-PRO Position", "name": "Spatial", "metrics": ["reach", "success"], "block": "PP-S"},
+        {
+          "group": "LIBERO-PRO Position", "name": "Avg", "metrics": ["reach", "success"],
+          "mean_of_blocks": ["PP-O", "PP-G", "PP-S"],
+          "rule": "The mean of the three suites' percentages (Object, Goal, Spatial; 500 episodes each). Long is not in the table."
+        },
+        {
+          "group": "LIBERO-PRO Task", "name": "Avg", "metrics": ["reach", "success"],
+          "mean_of_blocks": ["PT-O", "PT-G", "PT-S"],
+          "rule": "The mean of the three suites' percentages (Object, Goal, Spatial; 500 episodes each). The suites' own numbers are not printed."
+        },
+        {"group": "LIBERO-Plus", "name": "Layout", "metrics": ["reach", "success"], "block": "PL"}
+      ]
+    },
+    {
+      "table": 2,
+      "caption": "Results by how far the target is moved.",
+      "rows": [
+        {"label": "OpenVLA-OFT", "row": "openvla_oft"},
+        {"label": "SmolVLA", "row": "smolvla_exec10"},
+        {"label": "TurboVLA", "row": "turbovla"},
+        {"label": "π0-FAST", "row": "pi0_fast"},
+        {"label": "π0", "row": "pi0"},
+        {"label": "RSS†", "row": "pi05_rss"},
+        {"label": "APT†", "row": "apt"},
+        {"label": "π0.5", "row": "pi05"},
+        {"label": "π0.5 + CAG", "row": "pi05_cag"},
+        {"label": "π0.5 + PSG (Ours)", "row": "pi05_psg"}
+      ],
+      "scenes": {
+        "file": "os_g_scenes.csv",
+        "block": "OS-G",
+        "rule": "A scene of the block is one object at one place. Its distance is how far the object stands from its training place, horizontal, the mean over the scene's ten start states (os_g_scenes.csv says how it was read). A scene belongs to the group its distance falls in; the scenes at the training place are in no column.",
+        "groups": [
+          {"name": "< 20", "below_cm": 20},
+          {"name": "20-30", "from_cm": 20, "below_cm": 30},
+          {"name": "> 30", "from_cm": 30}
+        ]
+      },
+      "columns": [
+        {
+          "group": "LIBERO-Goal, target object moved (cm)", "name": "< 20", "metrics": ["reach", "success"],
+          "block": "OS-G", "scene_group": "< 20",
+          "rule": "All episodes of the group's scenes counted together (4 scenes x 10 start states)."
+        },
+        {
+          "group": "LIBERO-Goal, target object moved (cm)", "name": "20-30", "metrics": ["reach", "success"],
+          "block": "OS-G", "scene_group": "20-30",
+          "rule": "All episodes of the group's scenes counted together (4 scenes x 10 start states)."
+        },
+        {
+          "group": "LIBERO-Goal, target object moved (cm)", "name": "> 30", "metrics": ["reach", "success"],
+          "block": "OS-G", "scene_group": "> 30",
+          "rule": "All episodes of the group's scenes counted together (10 scenes x 10 start states)."
+        }
+      ]
+    },
+    {
+      "table": 3,
+      "caption": "Comparison with CAG on LIBERO-CF.",
+      "rows": [
+        {"label": "π0.5", "row": "pi05"},
+        {"label": "π0.5 + CAG-VA†", "row": "pi05_cag_va"},
+        {"label": "π0.5 + CAG", "row": "pi05_cag"},
+        {"label": "π0.5 + PSG (Ours)", "row": "pi05_psg"}
+      ],
+      "columns": [
+        {"group": "LIBERO-CF", "name": "Spatial", "metrics": ["reach", "success"], "block": "CF-S"},
+        {"group": "LIBERO-CF", "name": "Object", "metrics": ["reach", "success"], "block": "CF-O"},
+        {"group": "LIBERO-CF", "name": "OOD", "metrics": ["reach", "success"], "block": "CF-OOD"},
+        {
+          "group": "LIBERO-CF", "name": "Avg", "metrics": ["reach", "success"],
+          "mean_of_blocks": ["CF-S", "CF-O", "CF-OOD"],
+          "rule": "The mean of the three subsets' percentages, each subset weighing the same. It is not the count over all 2,000 episodes: the subsets have 750, 500 and 750."
+        }
+      ]
+    }
+  ]
+}

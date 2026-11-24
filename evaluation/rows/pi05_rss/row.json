@@ -1,0 +1,22 @@
+{
+  "row": "pi05_rss",
+  "name": "π0.5 + RSS",
+  "kind": "another paper's own fine-tune of π0.5 with guidance at inference, run with the authors' code and weights",
+  "environment": "rss",
+  "checkpoint": {
+    "address": "huggingface.co/doomon/RSS_pi05_cfg_libero_caption",
+    "revision": "d992b3fe7b203b65aa0d2f2d8a3db61320536e58",
+    "subfolder": "pi05_cfg_libero_caption_exp1/29999",
+    "licence": "not stated (no model card)"
+  },
+  "code": {
+    "address": "github.com/Doo-mon/RSS",
+    "revision": "f51a0a3f7373b35a61b0690696496066bb5616b8",
+    "licence": "Apache-2.0"
+  },
+  "method": "rss-guidance",
+  "method_settings": {
+    "guidance_scale": 1.5,
+    "source": "the release's CFGLeRobotLiberoDataConfig default (libero_cfg_config.py L40); the paper's γ"
+  }
+}

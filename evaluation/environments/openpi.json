@@ -1,0 +1,24 @@
+{
+  "environment": "openpi",
+  "used_by": ["pi0", "pi05", "pi0_fast", "pi05_psg", "pi05_oracle_push", "pi05_psg_a5_b0", "pi05_psg_a0_b1", "pi05_cut_none", "pi05_cut_grounding", "pi05_cut_direct", "pi0_cut_none", "pi0_cut_grounding", "pi0_cut_direct"],
+  "python": "3.11",
+  "variables": {
+    "XLA_FLAGS": "--xla_gpu_deterministic_ops=true",
+    "TF_CUDNN_DETERMINISTIC": "1"
+  },
+  "why_the_variables": "With them two launches of the same episodes on one card gave identical traces; without them the first query's actions already differed by 0.005-0.013 and the episodes went their own way (measured 2026-11-12). No measurable cost in speed.",
+  "sources": [
+    {"what": "openpi, as released: the models, the policies, the released LIBERO configs, and openpi-client from its packages/", "address": "github.com/Physical-Intelligence/openpi", "revision": "15a9616a00943ada6c20a0f158e3adb39df2ccac", "licence": "Apache-2.0 (LICENSE); it also ships Gemma's terms of use (LICENSE_GEMMA.txt)"}
+  ],
+  "build": [
+    "git clone --recurse-submodules https://github.com/Physical-Intelligence/openpi && git -C openpi checkout 15a9616a00943ada6c20a0f158e3adb39df2ccac && git -C openpi submodule update --init --recursive",
+    "cd openpi && GIT_LFS_SKIP_SMUDGE=1 uv sync   (openpi's README, 'Installation')",
+    "the interpreter is openpi/.venv/bin/python; nothing of this repository is installed in it: evaluation/run.py puts this checkout on the path beside it"
+  ],
+  "check": "python -c \"import openpi, openpi_client, jax; print(openpi.__file__, jax.__version__)\"   (the path printed lies in the openpi checkout; jax 0.5.3)",
+  "machine_variables": {"OPENPI_DATA_HOME": "where openpi caches downloaded checkpoints and the tokenizer"},
+  "tried_on_the_test_host_2026_11_16": [
+    "with uv 0.13.7: uv fetched CPython 3.11.18 and resolved 279 packages; clone 33 s, uv sync 75 s; checkout and .venv 8.6 GB; the two submodules initialised as openpi's README says (whether the sync works without them was not tried)",
+    "the check imports openpi from the checkout's src/ and openpi_client from its packages/openpi-client/src/; jax 0.5.3; upstream's uv sync also installs its dev group, pytest among it"
+  ]
+}

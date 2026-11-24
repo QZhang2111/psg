@@ -1,0 +1,19 @@
+{
+  "environment": "openpi-cf",
+  "used_by": ["pi05_cag", "pi05_cag_va"],
+  "python": "3.11",
+  "variables": {
+    "XLA_FLAGS": "--xla_gpu_deterministic_ops=true",
+    "TF_CUDNN_DETERMINISTIC": "1"
+  },
+  "why_the_variables": "The same as the openpi environment: two launches of the openpi rows on one card were bit-identical only with deterministic GPU operations. This row samples with openpi's JAX code too; its own repeatability is not measured.",
+  "sources": [
+    {"what": "openpi-cf: CAG's openpi fork with its two CAG servers (scripts/serve_policy_TF.py, scripts/serve_policy_VA.py) and the training config of the vision-action model (pi05_libero_unconditioned)", "address": "github.com/yuffish/LIBERO-CF, directory openpi-cf/", "revision": "8280a500a01f7f7d45efe202cb416ca362aa8c1a", "licence": "MIT (openpi: Apache-2.0; Gemma terms for the weights)"}
+  ],
+  "build": [
+    "git clone https://github.com/yuffish/LIBERO-CF && git -C LIBERO-CF checkout 8280a500a01f7f7d45efe202cb416ca362aa8c1a",
+    "cd LIBERO-CF/openpi-cf && GIT_LFS_SKIP_SMUDGE=1 uv sync",
+    "the interpreter is LIBERO-CF/openpi-cf/.venv/bin/python; openpi must be the editable install of this directory (the adapter finds the CAG server next to it, in openpi-cf/scripts/)"
+  ],
+  "check": "python -c \"import openpi, pathlib; print(pathlib.Path(openpi.__file__).resolve().parents[2] / 'scripts' / 'serve_policy_TF.py')\""
+}

@@ -1,0 +1,154 @@
+{
+ "block": "L-L",
+ "title": "LIBERO Long",
+ "benchmark": {
+  "name": "LIBERO",
+  "code": {
+   "address": "github.com/Lifelong-Robot-Learning/LIBERO",
+   "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+   "licence": "MIT"
+  },
+  "files": "in the code repository",
+  "suite": "libero_10",
+  "perturbation": "none",
+  "instruction_rule": "task.language (from the file name), as every release feeds it",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f",
+  "note": "run in the LIBERO-PRO environment: LIBERO-PRO @ eafdb809 carries these 80 files byte-identical (git blobs equal) and the same environment code"
+ },
+ "base_suite": "libero_10",
+ "environment": "sim-libero-pro",
+ "loader": "libero",
+ "rollout": {
+  "environment_seed": 7,
+  "settle_steps": 10,
+  "stop": "predicate",
+  "max_steps": 520
+ },
+ "seeds": [
+  7
+ ],
+ "start_states": "0-49",
+ "built_by": "generated from the benchmark's own files by a development script, not in this repository; this file is the definition",
+ "tasks": [
+  {
+   "index": 0,
+   "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+   "bddl": "libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+   "init": "libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init",
+   "bddl_sha256": "2e661058917f683a25bce480015197f0a2c1911bcbc2b9dd9d947199069c9618",
+   "init_sha256": "1899fe54c51e24a41d5f9e32254730d6777f4894ab68e0e873f1fa7ae2062030",
+   "bddl_git_blob": "071ec86f8b5d8f33d542a72f925fe89e42442657",
+   "init_git_blob": "70709f6618ad3ae625198987bd10978802252c6c",
+   "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+   "reach": null
+  },
+  {
+   "index": 1,
+   "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+   "bddl": "libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.bddl",
+   "init": "libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.pruned_init",
+   "bddl_sha256": "3f552805c7ab34c44debcf38a48b8131d6fee3011dd86c039650b84e0f77d058",
+   "init_sha256": "f8ac06ea8f43bb328d40cba1e6a9767da2f8f5386fd7ff3f845c64a96bf6d2ce",
+   "bddl_git_blob": "bbd9b7eda1e3aff44a193003fb88a568fc803d86",
+   "init_git_blob": "bac663fcef87007831cda1920699185c8f906706",
+   "instruction": "put both the cream cheese box and the butter in the basket",
+   "reach": null
+  },
+  {
+   "index": 2,
+   "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+   "bddl": "libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl",
+   "init": "libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init",
+   "bddl_sha256": "491835cc2eb6956f7ce3d1ee4e266377116168fe453e6529fe105e3b0333635d",
+   "init_sha256": "02a8401f8d59f5447fc8c5a16f4c158dd8c426c3eaed6779927a2a53e9abf3c5",
+   "bddl_git_blob": "6530a7778f9413f4b22b291a5a6606c04809d7c0",
+   "init_git_blob": "4fb1577b8573f854dafecef0f5ab5e54b3eac5da",
+   "instruction": "turn on the stove and put the moka pot on it",
+   "reach": null
+  },
+  {
+   "index": 3,
+   "task": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+   "bddl": "libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl",
+   "init": "libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init",
+   "bddl_sha256": "5255fe54d7f25fad4dee8fa30a30033d8cb908f1708d953c91ab609264fb4fb8",
+   "init_sha256": "e98ded151f64a036c74c872336dd09b968c379f3c9db7bc333aba37e7c235b86",
+   "bddl_git_blob": "71d1a650ea4e109e0d13b8c4475bf2cbe0ae091b",
+   "init_git_blob": "ffb00fa61ae55083d4fed59acbdeaa833c89a750",
+   "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+   "reach": null
+  },
+  {
+   "index": 4,
+   "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+   "bddl": "libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+   "init": "libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init",
+   "bddl_sha256": "0c6749b920bff1e1efe47ffb0e0b801a3e6959a650e710f376dd2b812c74e865",
+   "init_sha256": "b6f20784b381c75d715f4fdaadda1fb460cbe24adcbad76f381a009419b8474e",
+   "bddl_git_blob": "32024734f78b9c469d45c9d50503c2099ad67c4d",
+   "init_git_blob": "0c78a021a8a4be6bd9b7670064fa4437f829a9b7",
+   "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+   "reach": null
+  },
+  {
+   "index": 5,
+   "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+   "bddl": "libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+   "init": "libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init",
+   "bddl_sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+   "init_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+   "bddl_git_blob": "2f0ad4b2d57354113768bdc6575c97041037ef0c",
+   "init_git_blob": "82a10b23e883c82b9b9a7a38e837de476f1a53b0",
+   "instruction": "pick up the book and place it in the back compartment of the caddy",
+   "reach": null
+  },
+  {
+   "index": 6,
+   "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+   "bddl": "libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl",
+   "init": "libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init",
+   "bddl_sha256": "dbc9464b424cdc9b771b92d0b8a8c185b1b539f6a4133b323dc858bcf8f6a9c2",
+   "init_sha256": "6e811394c4ff9a43ae23515d8512e9b657c04344b94dd5baed121b595490514f",
+   "bddl_git_blob": "437f0755b8fee33d2fba02bd4f898845f6ed150f",
+   "init_git_blob": "a42d27b07ae2b451e872d830534416027225075c",
+   "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+   "reach": null
+  },
+  {
+   "index": 7,
+   "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+   "bddl": "libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.bddl",
+   "init": "libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.pruned_init",
+   "bddl_sha256": "e27ab37f512fe42e35771d6130f531e6a9656929e7b4c60b348b81360cf5675d",
+   "init_sha256": "2113ea5923fcbbe1b57b428383934496072f062729d0b72d3021573d55d25abc",
+   "bddl_git_blob": "0f3ba3ce48af83e690bfe8bed3caad22d4bf4cdf",
+   "init_git_blob": "84202ee6e16892bc3f4a7f0a4e00894ae6ec1b53",
+   "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+   "reach": null
+  },
+  {
+   "index": 8,
+   "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+   "bddl": "libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+   "init": "libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init",
+   "bddl_sha256": "ae1299a707d3e810096ad648948c517de40474bcdacca93a15e17d191e34454a",
+   "init_sha256": "44f992e911c84a1340589510ecdaf947a4872966f7678c8364d8bb5d13dc4dac",
+   "bddl_git_blob": "b983d7285869b49d3b6fe1329a9b7574de67b41b",
+   "init_git_blob": "a467b6242b44ba77dd88fe80fc55246613605022",
+   "instruction": "put both moka pots on the stove",
+   "reach": null
+  },
+  {
+   "index": 9,
+   "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+   "bddl": "libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+   "init": "libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.pruned_init",
+   "bddl_sha256": "456d145f92be049f445fc77673dc583d9d17ea7afe92f6ffcb2fd1fa5565d420",
+   "init_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+   "bddl_git_blob": "f531a4ede009cff9e1b0cb928049a88d72070d86",
+   "init_git_blob": "fbca14051e52c8fc63e5f897cca54b5de43ceb67",
+   "instruction": "put the yellow and white mug in the microwave and close it",
+   "reach": null
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "row": "pi05_cag_va",
+  "name": "π0.5 + CAG (with the vision-action model)",
+  "kind": "an inference-time method of another paper: the released π0.5-LIBERO as the conditioned policy, the authors' language-free model as the unconditioned one",
+  "environment": "openpi-cf",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "revision": "none (the bucket has no revisions)",
+    "licence": "not stated"
+  },
+  "unconditioned_checkpoint": {
+    "address": "huggingface.co/VLA-CF/pi05-libero-VA",
+    "revision": "7b7b6c2241245a15db80b0b4ff6a623ed329b7cc",
+    "openpi_config": "pi05_libero_unconditioned",
+    "licence": "not stated (no model card)",
+    "note": "formerly yuffish/pi05_libero_unconditioned (the README's name), which redirects here"
+  },
+  "code": {"address": "github.com/yuffish/LIBERO-CF", "revision": "8280a500a01f7f7d45efe202cb416ca362aa8c1a", "licence": "MIT"},
+  "method": "cag-vision-action",
+  "method_settings": {"guidance_scale": 1.5, "source": "the CAG paper, main.tex L609-611, and the README's command for this variant (L308)"}
+}

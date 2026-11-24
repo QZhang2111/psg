@@ -1,0 +1,154 @@
+{
+ "block": "L-G",
+ "title": "LIBERO Goal",
+ "benchmark": {
+  "name": "LIBERO",
+  "code": {
+   "address": "github.com/Lifelong-Robot-Learning/LIBERO",
+   "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+   "licence": "MIT"
+  },
+  "files": "in the code repository",
+  "suite": "libero_goal",
+  "perturbation": "none",
+  "instruction_rule": "task.language (from the file name), as every release feeds it",
+  "bddl_parser": "bddl 1.0.1 (pinned by LIBERO's requirements.txt), github.com/StanfordVL/bddl @ 7fba5f13cc9f3c83dcce9ef4b014903bbcd6e34f",
+  "note": "run in the LIBERO-PRO environment: LIBERO-PRO @ eafdb809 carries these 80 files byte-identical (git blobs equal) and the same environment code"
+ },
+ "base_suite": "libero_goal",
+ "environment": "sim-libero-pro",
+ "loader": "libero",
+ "rollout": {
+  "environment_seed": 7,
+  "settle_steps": 10,
+  "stop": "predicate",
+  "max_steps": 300
+ },
+ "seeds": [
+  7
+ ],
+ "start_states": "0-49",
+ "built_by": "generated from the benchmark's own files by a development script, not in this repository; this file is the definition",
+ "tasks": [
+  {
+   "index": 0,
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "bddl": "libero_goal/open_the_middle_drawer_of_the_cabinet.bddl",
+   "init": "libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init",
+   "bddl_sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b",
+   "init_sha256": "977efe1216bee72bb4e9fa9ec4be1bcfe37fb00ece815eac117feba019b34b9f",
+   "bddl_git_blob": "582fa1b35b9d32cf3c11cfb3fe3bdaba4b410bb3",
+   "init_git_blob": "cb8b43662355718f225b73bbce3fdafaf2be695e",
+   "instruction": "open the middle drawer of the cabinet",
+   "reach": null
+  },
+  {
+   "index": 1,
+   "task": "put_the_bowl_on_the_stove",
+   "bddl": "libero_goal/put_the_bowl_on_the_stove.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_stove.pruned_init",
+   "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+   "init_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+   "bddl_git_blob": "f4d3c61daa4cde457a7b4dc6332ff1b208ac3e03",
+   "init_git_blob": "10986104343f003b276e3545d1126ce16ab7fc49",
+   "instruction": "put the bowl on the stove",
+   "reach": null
+  },
+  {
+   "index": 2,
+   "task": "put_the_wine_bottle_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+   "init_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+   "bddl_git_blob": "b86ebdc4205f2a5e24de3a2f80d2573e01ebb098",
+   "init_git_blob": "5ac3915119a75d20d4f416df5b11f2043dbf3e0d",
+   "instruction": "put the wine bottle on top of the cabinet",
+   "reach": null
+  },
+  {
+   "index": 3,
+   "task": "open_the_top_drawer_and_put_the_bowl_inside",
+   "bddl": "libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl",
+   "init": "libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init",
+   "bddl_sha256": "3056e4dc72ee590432cfb18c610fd077a572c8b8f256e45328031005dd0b6757",
+   "init_sha256": "1cd5354ade9ab9f323a518515f961df96123b7daeca017df1f62d3e9ff18794f",
+   "bddl_git_blob": "d5d3322dbd90c45f0461779835088803070592fa",
+   "init_git_blob": "9e5d56fad0911ead448c30098b327e6335b87bf2",
+   "instruction": "open the top drawer and put the bowl inside",
+   "reach": null
+  },
+  {
+   "index": 4,
+   "task": "put_the_bowl_on_top_of_the_cabinet",
+   "bddl": "libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl",
+   "init": "libero_goal/put_the_bowl_on_top_of_the_cabinet.pruned_init",
+   "bddl_sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713",
+   "init_sha256": "c0b7baf82f36f5304488bac91d788800a1c93d0a9fd19a73f448992d5366e145",
+   "bddl_git_blob": "4b03c35f2bc5432666d6ffd86f5d9b483773bdad",
+   "init_git_blob": "d1da07dfe4b89764d0c484882b9335abd4016516",
+   "instruction": "put the bowl on top of the cabinet",
+   "reach": null
+  },
+  {
+   "index": 5,
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "bddl": "libero_goal/push_the_plate_to_the_front_of_the_stove.bddl",
+   "init": "libero_goal/push_the_plate_to_the_front_of_the_stove.pruned_init",
+   "bddl_sha256": "26f22f8ad39a4b2b344b049115c45661a877fa0b4821fb78246725e7e87d8c0b",
+   "init_sha256": "794beed679b18bbd7d9fb851c81877a974915ad63addff2d5ac5af0607fafac9",
+   "bddl_git_blob": "b31490451ee3c938ba45321e4f900a699a20230b",
+   "init_git_blob": "871aa4adcdbdce0a69570277b9ee201243f6374a",
+   "instruction": "push the plate to the front of the stove",
+   "reach": null
+  },
+  {
+   "index": 6,
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "bddl": "libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+   "init": "libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+   "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+   "init_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+   "bddl_git_blob": "a04a03bccb35991a6b3cd5bc0ccf81ff414679f2",
+   "init_git_blob": "b7ced3d90585b6f0fafc27a37d1b3ad6afd692fd",
+   "instruction": "put the cream cheese in the bowl",
+   "reach": null
+  },
+  {
+   "index": 7,
+   "task": "turn_on_the_stove",
+   "bddl": "libero_goal/turn_on_the_stove.bddl",
+   "init": "libero_goal/turn_on_the_stove.pruned_init",
+   "bddl_sha256": "cbd2a0514d53226c5d09e17af40b22935d4cb6ff8fdaff0d55f555de1adecc13",
+   "init_sha256": "ed121db31d749647d70741c4c4ef0bd8e0876663986578795968e962d9b91340",
+   "bddl_git_blob": "ae8b0e8bad4a895664665152c7e2c63dc8e0f3ce",
+   "init_git_blob": "b0373dce81adcbaf9236a28a9b98a668e9d44393",
+   "instruction": "turn on the stove",
+   "reach": null
+  },
+  {
+   "index": 8,
+   "task": "put_the_bowl_on_the_plate",
+   "bddl": "libero_goal/put_the_bowl_on_the_plate.bddl",
+   "init": "libero_goal/put_the_bowl_on_the_plate.pruned_init",
+   "bddl_sha256": "358b7781437e412c67d6a7648c1c28796b6b1bf117a25e61316cb8dfeb940e5b",
+   "init_sha256": "ef3466ffad734754dc40eba1f6f5712e37aa46b9692c595e0da34f16d3a0c668",
+   "bddl_git_blob": "60eba979b3c660f26e2fabde5835e21a12a0f840",
+   "init_git_blob": "32cebd937a4cd1201e1c38dc878d2b95c8828290",
+   "instruction": "put the bowl on the plate",
+   "reach": null
+  },
+  {
+   "index": 9,
+   "task": "put_the_wine_bottle_on_the_rack",
+   "bddl": "libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+   "init": "libero_goal/put_the_wine_bottle_on_the_rack.pruned_init",
+   "bddl_sha256": "3d3ee18139056aa3780572cde17b1c50dc20ae0d299403f65e514e8471ba0e8e",
+   "init_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+   "bddl_git_blob": "def509b60cbacdfdcbc605e37f02d67980985077",
+   "init_git_blob": "eb2d7fa1bec250127ba2e121e0b0e9bf337f83d5",
+   "instruction": "put the wine bottle on the rack",
+   "reach": null
+  }
+ ]
+}

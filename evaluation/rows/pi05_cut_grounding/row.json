@@ -1,0 +1,14 @@
+{
+  "row": "pi05_cut_grounding",
+  "name": "π0.5, the grounding cut: the image tokens of both cameras may not read the instruction",
+  "kind": "an instrument for the paper's pathway cuts (Sec. 3.3) on the released π0.5-LIBERO checkpoint; no row of the paper's tables",
+  "environment": "openpi",
+  "checkpoint": {
+    "address": "gs://openpi-assets/checkpoints/pi05_libero",
+    "openpi_config": "pi05_libero",
+    "tree_sha256": "42d571bd87f05f1182810f5a8bfa6d084c0d0dd277aff739bcf8f69868e6fb99",
+    "licence": "not stated"
+  },
+  "method": "pathway-cut",
+  "cut": "grounding"
+}

@@ -1,0 +1,27 @@
+{
+  "environment": "sim-libero-plus",
+  "used_by_blocks": ["PL"],
+  "python": "3.8.13",
+  "sources": [
+    {"what": "LIBERO-plus, the simulator code and all its task files (a fork of LIBERO; the base tasks' files are byte-identical to LIBERO @ 8f1084e3132a39270c3a13ebe37270a43ece2a01)",
+     "address": "github.com/sylvestf/LIBERO-plus", "revision": "4976dc30028e805ff8094b55501d532c48fec182", "licence": "none stated"},
+    {"what": "LIBERO-plus assets (new objects, textures, scenes), assets.zip, sha256 96764a4bfbdaea98d4411598caeab235458318fe0f549611b93d1a323027b3cf, 6,395,849,578 bytes, unzipped into libero/libero/",
+     "address": "huggingface.co/datasets/Sylvest/LIBERO-plus", "revision": "dd2bd61b7d9a6fef1abc52d606e983b41886a149", "licence": "see the dataset card"}
+  ],
+  "packages_pinned_by_the_source": {"robosuite": "1.4.0", "bddl": "1.0.1", "numpy": "1.22.4", "gym": "0.25.2"},
+  "packages_not_pinned_by_the_source": ["mujoco", "usd-core>=25.5, wand, scikit-image (extra_requirements.txt)", "imageio, imageio-ffmpeg (the record's video)"],
+  "build": [
+    "create a Python 3.8.13 environment (LIBERO's; LIBERO-plus says its use is identical to LIBERO's, README L42)",
+    "clone the code at the revision; pip install -e .; system packages libexpat1, libfontconfig1-dev, libpython3-stdlib, libmagickwand-dev; pip install -r extra_requirements.txt (README L52-60)",
+    "download assets.zip at the revision, check its sha256, unzip into libero/libero/ (README L62-78)",
+    "pip install imageio imageio-ffmpeg",
+    "point the package's config at this checkout's libero/libero folders"
+  ],
+  "check": "python -c \"from libero.libero import benchmark; s = benchmark.get_benchmark_dict()['libero_goal'](); print(s.n_tasks)\"",
+  "tried_on_the_test_host_2026_11_12": [
+    "code: git clone at 4976dc30 (0.15 GB); assets.zip at dd2bd61b: 5.96 GB, sha256 equal to the hub's; unzipped it is 8.95 GB in 457,675 files under a long build path (inspire/hdd/.../LIBERO-plus-0/assets): move that assets folder to libero/libero/assets",
+    "no system ImageMagick on the host and no apt: ImageMagick 7.1.2 from conda-forge with a standalone micromamba 2.0.5 (0.57 GB); MAGICK_HOME set to that prefix",
+    "Python: a venv with --system-site-packages over an existing LIBERO-PRO simulator environment (Python 3.8, numpy 1.22.4, robosuite 1.4.1, mujoco 3.2.3) plus Wand and scikit-image 0.21.0 (0.07 GB); LIBERO-plus put first on PYTHONPATH, not pip-installed",
+    "a LIBERO config pointing at the checkout's bddl_files, init_files and assets; the base tasks are not entries of LIBERO-plus's suite lists, their files are LIBERO's own"
+  ]
+}

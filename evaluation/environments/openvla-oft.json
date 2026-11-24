@@ -1,0 +1,23 @@
+{
+  "environment": "openvla-oft",
+  "used_by": ["openvla_oft"],
+  "python": "3.10.14",
+  "sources": [
+    {"what": "OpenVLA-OFT, the release's code (experiments/robot/*, prismatic/*)", "address": "github.com/moojink/openvla-oft", "revision": "e4287e94541f459edc4feabc4e181f537cd569a8", "licence": "MIT"},
+    {"what": "the authors' transformers fork with bidirectional attention over the action slots (stock transformers would decode the 56 slots causally and give other actions without an error)", "address": "github.com/moojink/transformers-openvla-oft", "revision": "bc339d9ad707454c0c115970db43c260067c61ab"}
+  ],
+  "packages_pinned_by_the_source": {"torch": "2.2.0", "torchvision": "0.17.0", "timm": "0.9.10", "tokenizers": "0.19.1", "peft": "0.11.1", "tensorflow": "2.15.0"},
+  "versions_of_the_paper": "Python 3.10.14, PyTorch 2.2.0, the transformers fork (v4.40.1), an A100 (LIBERO.md L86-90)",
+  "build": [
+    "create a Python 3.10.14 environment",
+    "install torch 2.2.0 and torchvision 0.17.0 for the machine's CUDA",
+    "clone the code at the revision; pip install -e .  (SETUP.md L14-17; pyproject.toml pulls the transformers fork, pin it to the revision above)",
+    "flash-attn is for training only (SETUP.md L19-23): not installed",
+    "no simulator in this environment: the adapter does not import libero or robosuite"
+  ],
+  "check": "python -c \"import transformers, torch, tensorflow; from experiments.robot import openvla_utils; from prismatic.vla import constants as C; print(transformers.__version__, torch.__version__, C.NUM_ACTIONS_CHUNK)\"",
+  "tried_on_the_test_host_2026_11_12": [
+    "an existing environment matched the release exactly: Python 3.10.21, torch 2.2.0, tensorflow 2.15.0, timm 0.9.10, tokenizers 0.19.1, the transformers fork at bc339d9a (direct_url.json), openvla-oft editable at e4287e94",
+    "weights: the combined checkpoint at 638918f3, 25 files, 15.7 GB, into a separate HF_HOME"
+  ]
+}

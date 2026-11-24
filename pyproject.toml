@@ -1,0 +1,82 @@
+# The package psg, and the settings of the tools. `uv pip install -e .` (or `pip install -e .`) into openpi's
+# environment makes `from psg.policy import PsgPolicy` work from any directory (README, "Installation"). Only
+# psg is a package; the evaluation installs nothing: evaluation/run.py puts its own checkout first on the path,
+# and each environment is built from its own release (evaluation/environments/).
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psg"
+version = "0.1.0"
+description = "Pathway-Separated Guidance: an inference-time method on openpi's released pi0.5 policy"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+# No dependencies: openpi's environment provides openpi, JAX, einops and NumPy, and a dependency declared here
+# could make an installer change that environment. No requires-python: psg runs on openpi's Python (3.11), while
+# the tables' command (python -m evaluation.tables.render) runs on any Python from 3.8 without installing anything.
+dependencies = []
+
+[tool.setuptools]
+packages = ["psg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+# https://docs.astral.sh/ruff/rules/
+select = [
+    "B",
+    "C4",
+    "DTZ",
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "FBT",
+    "FURB",
+    "I",
+    "ICN",
+    "ISC",
+    "LOG",
+    "N",
+    "PD",
+    "PERF",
+    "PIE",
+    "PLC",
+    "PLE",
+    "PLR1",
+    "PLR5",
+    "PLW",
+    "PT",
+    "Q",
+    "RET",
+    "RUF",
+    "SIM",
+    "SLF",
+    "T10",
+    "T20",
+    "UP",
+    "W",
+]
+ignore = [
+    "F722",   # Conflicts with array typing.
+    "T201",   # Print statements are used.
+    "PD008",  # Lots of false positives.
+    "ISC001", # Disabled to support ruff format.
+    "LOG015", # Use logger.info.
+]
+unfixable = [
+    "B905", # Its fix defaults to strict=False.
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+force-sort-within-sections = true
+single-line-exclusions = ["collections.abc", "typing", "typing_extensions"]

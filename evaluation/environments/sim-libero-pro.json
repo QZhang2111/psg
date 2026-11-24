@@ -1,0 +1,21 @@
+{
+  "environment": "sim-libero-pro",
+  "used_by_blocks": ["L-S", "L-O", "L-G", "L-L", "PP-S", "PP-O", "PP-G", "PT-S", "PT-O", "PT-G", "OS-O", "OS-G"],
+  "python": "3.8.13",
+  "sources": [
+    {"what": "LIBERO-PRO, the simulator code (a fork of LIBERO; its libero_spatial/object/goal/10 files and environment code are byte-identical to LIBERO @ 8f1084e3132a39270c3a13ebe37270a43ece2a01)",
+     "address": "github.com/Zxy-MLlab/LIBERO-PRO", "revision": "eafdb809426b13153aa1e4c42d6601844217dfec", "licence": "MIT"},
+    {"what": "LIBERO-PRO's task files (bddl_files/, init_files/ of the _swap and _task suites)",
+     "address": "huggingface.co/datasets/zhouxueyang/LIBERO-Pro", "revision": "c86fc3b8293185a6f373677018ff3e37f8391602", "licence": "CC-BY-4.0"}
+  ],
+  "packages_pinned_by_the_source": {"robosuite": "1.4.0", "bddl": "1.0.1", "numpy": "1.22.4", "gym": "0.25.2"},
+  "packages_not_pinned_by_the_source": ["mujoco (robosuite 1.4.0 accepts several; the record states the installed one)", "imageio, imageio-ffmpeg (the record's video)"],
+  "build": [
+    "create a Python 3.8.13 environment",
+    "clone the code at the revision; pip install -r requirements.txt; pip install -e .  (LIBERO-PRO README L145-151; torch is not needed by the simulator)",
+    "download the dataset at the revision and move bddl_files/* and init_files/* into libero/libero/bddl_files/ and libero/libero/init_files/ (README L165-172)",
+    "pip install imageio imageio-ffmpeg",
+    "point the package's config (~/.libero/config.yaml or LIBERO_CONFIG_PATH) at this checkout's libero/libero folders"
+  ],
+  "check": "python -c \"from libero.libero import benchmark; s = benchmark.get_benchmark_dict()['libero_object_task'](); print(s.n_tasks, s.get_task_init_states(0).shape)\""
+}

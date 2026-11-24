@@ -1,0 +1,5 @@
+model,scenes_at_training_place,scenes_moved,on_training_place_before_pct,on_training_place_after_pct,on_new_place_before_pct,on_new_place_after_pct
+PaliGemma,2,12,23.0,3.3,2.0,19.3
+pi0 LIBERO,2,12,11.3,8.9,0.9,3.7
+pi0-FAST LIBERO,2,12,15.4,6.1,2.1,0.4
+pi0.5 LIBERO,2,12,47.7,2.0,0.1,29.8
