@@ -8,7 +8,7 @@
 
 <sup>1</sup>Australian National University &emsp; <sup>2</sup>CSIRO &emsp; <sup>3</sup>GE Research
 
-<img src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b" alt="arXiv: coming soon">
+<a href="https://arxiv.org/abs/2611.32206"><img src="https://img.shields.io/badge/arXiv-2611.32206-b31b1b" alt="arXiv: 2611.32206"></a>
 <a href="https://github.com/QZhang2111/psg/actions/workflows/tests.yml"><img src="https://github.com/QZhang2111/psg/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue" alt="License: Apache-2.0"></a>
 <img src="https://img.shields.io/badge/PSG-training--free-2ea44f" alt="PSG is training-free">
